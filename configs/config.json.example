@@ -1,0 +1,4 @@
+{
+    "OPENAI_API_KEY": "YOUR OPENAI API KEY",
+    "GPT_MODEL": "gpt-4"
+}
