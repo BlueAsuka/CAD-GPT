@@ -1,6 +1,6 @@
 # A prompt for system design
 
-system_design_prompt = f"""
+design_prompt = f"""
 You are an expert in mechanical engineering. 
 You are familar with different mechanical components and system running mechanism. 
 You task is to design and compute a set of parameters based on user's requirement. 

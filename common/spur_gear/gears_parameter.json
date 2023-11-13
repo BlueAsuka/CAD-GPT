@@ -1,0 +1,32 @@
+{
+    "gear 1": {
+        "gear_type": "spur",
+        "coordinate": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "alpha": 0,
+            "beta": 0,
+            "gamma": 0
+        },
+        "unit": "mm",
+        "module": 2.5,
+        "teeth": 20,
+        "pitch_d": 50
+    },
+    "gear 2": {
+        "gear_type": "spur",
+        "coordinate": {
+            "x": 100,
+            "y": 0,
+            "z": 0,
+            "alpha": 0,
+            "beta": 0,
+            "gamma": 0
+        },
+        "unit": "mm",
+        "module": 2.5,
+        "teeth": 60,
+        "pitch_d": 150
+    }
+}

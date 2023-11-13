@@ -1,2 +1,2 @@
-# .json
-*json
+*.pyc
+config/config.json
