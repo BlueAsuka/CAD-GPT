@@ -1,0 +1,38 @@
+{
+  "gear 1": {
+    "gear_type": "helix",
+    "coordinate": {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "alpha": 0,
+      "beta": 0,
+      "gamma": 0
+    },
+    "unit": "mm",
+    "module": 2,
+    "teeth": 20,
+    "height": 20,
+    "pitch_d": 40,
+    "pitch_angle": 30,
+    "pressure_angle": 20
+  },
+  "gear 2": {
+    "gear_type": "helix",
+    "coordinate": {
+      "x": 50,
+      "y": 0,
+      "z": 0,
+      "alpha": 0,
+      "beta": 0,
+      "gamma": 0
+    },
+    "unit": "mm",
+    "module": 2,
+    "teeth": 30,
+    "height": 15,
+    "pitch_d": 60,
+    "pitch_angle": 30,
+    "pressure_angle": 20
+  }
+}
