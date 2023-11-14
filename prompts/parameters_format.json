@@ -1,0 +1,15 @@
+{
+    "gear ":{
+        "gear_type": "",
+        "source": "",
+        "coordinate": {"x": "", "y": "", "z": "", "alpha": "", "beta": "", "gamma": ""},
+        "unit": "",
+        "module": "",
+        "teeth": "",
+        "height": "",
+        "pitch_d": "",
+        "helix_angle": "",
+        "pitch_angle": "",
+        "pressure_angle": ""
+    }
+}

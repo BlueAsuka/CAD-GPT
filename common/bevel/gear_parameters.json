@@ -1,0 +1,42 @@
+{
+  "gear 1": {
+    "gear_type": "bevel",
+    "source": "driving",
+    "coordinate": {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "alpha": 0,
+      "beta": 0,
+      "gamma": 0
+    },
+    "unit": "mm",
+    "module": 2,
+    "teeth": 20,
+    "height": 20,
+    "pitch_d": 40,
+    "helix_angle": 0,
+    "pitch_angle": 45,
+    "pressure_angle": 20
+  },
+  "gear 2": {
+    "gear_type": "bevel",
+    "source": "driven",
+    "coordinate": {
+      "x": 40,
+      "y": 0,
+      "z": 40,
+      "alpha": 0,
+      "beta": 0,
+      "gamma": 0
+    },
+    "unit": "mm",
+    "module": 2,
+    "teeth": 40,
+    "height": 20,
+    "pitch_d": 80,
+    "helix_angle": 0,
+    "pitch_angle": 45,
+    "pressure_angle": 20
+  }
+}
