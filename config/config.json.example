@@ -1,4 +1,5 @@
 {
     "OPENAI_API_KEY": "YOUR OPENAI API KEY",
-    "GPT_MODEL": "gpt-4"
+    "GPT_MODEL": "gpt-4",
+    "OPENSCAD_EXEC_PATH": "THE PATH OF OPENSCAD EXECUTABLE FILE e.g., .exe on Windows",
 }
