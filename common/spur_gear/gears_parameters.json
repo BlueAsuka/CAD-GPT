@@ -1,32 +1,42 @@
 {
-    "gear 1": {
-        "gear_type": "spur",
-        "coordinate": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "alpha": 0,
-            "beta": 0,
-            "gamma": 0
-        },
-        "unit": "mm",
-        "module": 2.5,
-        "teeth": 20,
-        "pitch_d": 50
+  "gear_1": {
+    "gear_type": "spur",
+    "source": "driving",
+    "coordinate": {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "alpha": 0,
+      "beta": 0,
+      "gamma": 0
     },
-    "gear 2": {
-        "gear_type": "spur",
-        "coordinate": {
-            "x": 100,
-            "y": 0,
-            "z": 0,
-            "alpha": 0,
-            "beta": 0,
-            "gamma": 0
-        },
-        "unit": "mm",
-        "module": 2.5,
-        "teeth": 60,
-        "pitch_d": 150
-    }
+    "unit": "mm",
+    "module": 2.5,
+    "teeth": 20,
+    "height": 18,
+    "pitch_d": 50,
+    "helix_angle": 0,
+    "pitch_angle": 0,
+    "pressure_angle": 20
+  },
+  "gear_2": {
+    "gear_type": "spur",
+    "source": "driven",
+    "coordinate": {
+      "x": 100,
+      "y": 0,
+      "z": 0,
+      "alpha": 0,
+      "beta": 0,
+      "gamma": 0
+    },
+    "unit": "mm",
+    "module": 2.5,
+    "teeth": 60,
+    "height": 27,
+    "pitch_d": 150,
+    "helix_angle": 0,
+    "pitch_angle": 0,
+    "pressure_angle": 20
+  }
 }

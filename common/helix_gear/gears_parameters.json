@@ -1,6 +1,7 @@
 {
   "gear 1": {
     "gear_type": "helix",
+    "source": "driving",
     "coordinate": {
       "x": 0,
       "y": 0,
@@ -12,13 +13,15 @@
     "unit": "mm",
     "module": 2,
     "teeth": 20,
-    "height": 20,
+    "height": 15,
     "pitch_d": 40,
-    "pitch_angle": 30,
+    "helix_angle": 20,
+    "pitch_angle": 0,
     "pressure_angle": 20
   },
-  "gear 2": {
+    "gear 2": {
     "gear_type": "helix",
+    "source": "driven",
     "coordinate": {
       "x": 50,
       "y": 0,
@@ -30,9 +33,10 @@
     "unit": "mm",
     "module": 2,
     "teeth": 30,
-    "height": 15,
+    "height": 20,
     "pitch_d": 60,
-    "pitch_angle": 30,
+    "helix_angle": 20,
+    "pitch_angle": 0,
     "pressure_angle": 20
   }
 }

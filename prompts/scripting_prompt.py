@@ -16,7 +16,7 @@ scripting_details = f"""\n
 The process of writing script is described as follow:
 
 Firstly, you should set the spatial position of items based on 'coordinate' parameters.
-If 'gear_type' are not 'spur', the pitch_angle should be inverse to each other.
+If 'gear_type' are not 'spur', the 'helix_angle' should be inverse to each other.
 If 'source' are not 'driving', the 'gamma' is equal to 360 / (teeth * 2).
 If 'gear_type' is 'bevel' and 'source' is 'driven', 'gamma' is 0 and 'beta' is -90
 Then write to the script: 
