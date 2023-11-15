@@ -2,8 +2,6 @@ import os
 import json
 import openai
 from datetime import datetime
-from functions import *
-from functions_info import *
 
 with open('config/config.json') as f:
     configs = json.load(f)
@@ -113,10 +111,3 @@ class Agent:
                 self.memory = json.load(f)
         except FileNotFoundError as e:
             print("Memory file not found")
-            
-
-if __name__ == "__main__":
-    agent = Agent("Haoxuan", functions, {"get_current_weather" : get_current_weather})
-    print(
-        agent.generate_response([{"role": "user", "content": "what is the whether like in London today?"}])
-    )
