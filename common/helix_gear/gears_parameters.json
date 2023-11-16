@@ -1,42 +1,42 @@
 {
-  "gear 1": {
-    "gear_type": "helix",
-    "source": "driving",
-    "coordinate": {
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "alpha": 0,
-      "beta": 0,
-      "gamma": 0
-    },
-    "unit": "mm",
-    "module": 2,
-    "teeth": 20,
-    "height": 15,
-    "pitch_d": 40,
-    "helix_angle": 20,
-    "pitch_angle": 0,
-    "pressure_angle": 20
-  },
-    "gear 2": {
-    "gear_type": "helix",
-    "source": "driven",
-    "coordinate": {
-      "x": 50,
-      "y": 0,
-      "z": 0,
-      "alpha": 0,
-      "beta": 0,
-      "gamma": 0
-    },
-    "unit": "mm",
-    "module": 2,
-    "teeth": 30,
-    "height": 20,
-    "pitch_d": 60,
-    "helix_angle": 20,
-    "pitch_angle": 0,
-    "pressure_angle": 20
-  }
+   "gear 1": {
+      "gear_type": "helix",
+      "source": "driving",
+      "coordinate": {
+         "x": 0,
+         "y": 0,
+         "z": 0,
+         "alpha": 0,
+         "beta": 0,
+         "gamma": 0
+      },
+      "unit": "mm",
+      "module": 2.5,
+      "teeth": 16,
+      "height": 15,
+      "pitch_d": 40,
+      "helix_angle": 20,
+      "pitch_angle": 0,
+      "pressure_angle": 20
+   },
+   "gear 2": {
+      "gear_type": "helix",
+      "source": "driven",
+      "coordinate": {
+         "x": 50,
+         "y": 0,
+         "z": 0,
+         "alpha": 0,
+         "beta": 0,
+         "gamma": 0
+      },
+      "unit": "mm",
+      "module": 2.5,
+      "teeth": 24,
+      "height": 20,
+      "pitch_d": 60,
+      "helix_angle": 20,
+      "pitch_angle": 0,
+      "pressure_angle": 20
+   }
 }

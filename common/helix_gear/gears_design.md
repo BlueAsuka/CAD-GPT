@@ -1,101 +1,83 @@
-To design a one-stage helical gear system that meets the given requirements, we'll follow these steps:
+To design a gear system with the given requirements, we need to calculate the module, number of teeth, and the coordinates of the driven gear center. Let's start by defining the gear ratio and the relationship between the gears.
 
-1. Determine the gear ratio.
-2. Select a module number.
-3. Calculate the number of teeth for both gears.
-4. Determine the pitch diameters.
-5. Calculate the center distance.
-6. Determine the coordinates of the driven gear.
+### Gear Ratio
+The gear ratio (i) is defined as the ratio of the number of teeth on the driven gear (N2) to the number of teeth on the driving gear (N1):
 
-### Step 1: Determine Gear Ratio
+$$ i = \frac{N2}{N1} $$
 
-The desired gear ratio is given as 1.5:1, which means that the driving gear must make 1.5 revolutions for every revolution of the driven gear.
+Given that the desired gear ratio is 1.5:1, we can express N2 in terms of N1:
 
-Let us denote:
-- $ N_1 $ as the number of teeth for the driving gear.
-- $ N_2 $ as the number of teeth for the driven gear.
-- $ i $ as the gear ratio.
+$$ N2 = 1.5 \cdot N1 $$
 
-Therefore, the gear ratio $ i $ can be described as:
-$$ i = \frac{N_2}{N_1} $$
+### Module Calculation
+The module (m) is a measure of the size of the teeth and is related to the pitch diameter (d) and the number of teeth (N) by the formula:
 
-Given that $$ i = 1.5 $$ we can select an initial pair of teeth numbers that closely fit this ratio.
+$$ m = \frac{d}{N} $$
 
-### Step 2: Select a Module Number
+Since the axes of the two gears are parallel and the center distance (a) is 50mm, we can relate the pitch diameters of the two gears to the center distance:
 
-The module number is crucial to define the gear size and is related to the pitch diameter and the number of teeth via the equation:
+$$ a = \frac{d1 + d2}{2} $$
 
-$$ module = \frac{pitch \ diameter}{number \ of \ teeth} $$
+Substituting the relationship between d and N, and knowing that d2 = 1.5 * d1, we get:
 
-For our initial calculation we can start with a module of 1mm as an example, from this we will see if it fits and adjust as necessary.
+$$ 50 = \frac{d1 + 1.5 \cdot d1}{2} $$
 
-### Step 3: Calculate Number of Teeth for Both Gears
+Solving for d1 gives us:
 
-To satisfy the gear ratio of 1.5, and starting with a standard number of teeth for the smaller gear, say 20 (a typical selection for smaller gears), the number of teeth on the larger gear should be:
+$$ 50 = d1 \cdot (1 + 1.5) / 2 $$
+$$ 50 = d1 \cdot 2.5 / 2 $$
+$$ d1 = \frac{50 \cdot 2}{2.5} $$
+$$ d1 = 40 \text{mm} $$
 
-$$ N_2 = N_1 \times i = 20 \times 1.5 = 30 $$
+Now, we can choose a module that fits the standard sizes and allows us to have an integer number of teeth for the driving gear. Since d1 = m * N1, we can rearrange the formula to find N1:
 
-So we have 20 teeth on the driving gear and 30 teeth on the driven gear.
+$$ N1 = \frac{d1}{m} $$
 
-### Step 4: Determine the Pitch Diameters
+We need to select a module such that N1 is an integer. Let's start with a module of 2mm (a common standard size) and see if it results in an integer number of teeth:
 
-The pitch diameter (D) for each gear can be calculated using the module (m) and the number of teeth (N):
+$$ N1 = \frac{40}{2} $$
+$$ N1 = 20 $$
 
-$$ D = m \times N $$
+This is an integer, so a module of 2mm is suitable. Now we can calculate N2:
 
-For the driving gear:
-$$ D_1 = m \times N_1 = 1 \times 20 = 20mm $$
+$$ N2 = 1.5 \cdot N1 $$
+$$ N2 = 1.5 \cdot 20 $$
+$$ N2 = 30 $$
 
-For the driven gear:
-$$ D_2 = m \times N_2 = 1 \times 30 = 30mm $$
+### Coordinates of the Driven Gear Center
+The driving gear is at the center of the plane (0, 0). The driven gear will be positioned at a distance equal to the center distance (a) along the x-axis. Therefore, the coordinates of the driven gear center will be (50, 0).
 
-### Step 5: Calculate the Center Distance
+### Final Parameters
+We have chosen a module of 2mm, which is not a standard size according to the given list. The closest standard size greater than 2mm is 2.5mm. We will use this module and recalculate the number of teeth for both gears.
 
-The center distance (a) for helical gears is given by the sum of the pitch diameters of the two gears divided by 2:
+$$ N1 = \frac{d1}{m} $$
+$$ N1 = \frac{40}{2.5} $$
+$$ N1 = 16 $$
 
-$$ a = \frac{D_1 + D_2}{2} $$
+Now, we calculate N2 using the gear ratio:
 
-$$ a = \frac{20mm + 30mm}{2} = 25mm $$
+$$ N2 = 1.5 \cdot N1 $$
+$$ N2 = 1.5 \cdot 16 $$
+$$ N2 = 24 $$
 
-### Step 6: Coordinates of the Driven Gear
+Both N1 and N2 are integers, so these values are acceptable. The pitch diameters will be:
 
-Since the driving gear is located at the center of the plane, which is (0,0), and the distance between the axes is 50mm, the driven gear must then be displaced by 50mm along the x-axis.
+$$ d1 = m \cdot N1 $$
+$$ d1 = 2.5 \cdot 16 $$
+$$ d1 = 40 \text{mm} $$
 
-The coordinates of the driven gear center would then be (50, 0).
+$$ d2 = m \cdot N2 $$
+$$ d2 = 2.5 \cdot 24 $$
+$$ d2 = 60 \text{mm} $$
 
-### Review and Finalizing
+The center distance will be:
 
-Now, we must check if the center distance (calculated as 25mm) matches the given condition (50mm). If not, we must adjust the module or the number of teeth to meet this distance and still maintain or exceed the desired gear ratio and ensure that the modules coincide with the priority or alternate numbers.
+$$ a = \frac{d1 + d2}{2} $$
+$$ a = \frac{40 + 60}{2} $$
+$$ a = 50 \text{mm} $$
 
-In our case, the calculated center distance does not match the required center distance of 50mm, so we must adjust our values.
+This confirms that our choice of module and number of teeth is correct.
 
-To get a center distance of 50mm, let's increase our module to match this. We choose a pair of teeth numbers that maintain the gear ratio above 1.5, and the module then matches the product of half the center distance and sum of teeth number as follows:
-
-$$ m = \frac{2 \times a}{N_1 + N_2} $$
-
-We keep the numbers of teeth the same for initial calculation:
-$$ m = \frac{2 \times 50mm}{20 + 30} $$
-$$ m = \frac{100}{50} = 2mm $$
-
-The module of 2 is a number from the priority list, which is good. Now we recalculate the pitch diameters with this new module:
-
-For the driving gear:
-$$ D_1 = 2 \times 20 = 40mm $$
-
-For the driven gear:
-$$ D_2 = 2 \times 30 = 60mm $$
-
-Now we check the center distance:
-$$ a = \frac{D_1 + D_2}{2} = \frac{40mm + 60mm}{2} = \frac{100mm}{2} = 50mm $$
-
-The center distance is correct, so our parameters are chosen properly. 
-
-With these new parameters, we have:
-
-gear 1 (driving gear): helical gear, module 2mm, teeth 20, pitch diameter 40mm, helix angle 20 degrees, height 15mm, coordinate (0, 0)
-gear 2 (driven gear): helical gear, module 2mm, teeth 30, pitch diameter 60mm, helix angle 20 degrees, height 20mm, coordinate (50, 0)
-
-The gear ratio now is actually:
-$$ i = \frac{N_2}{N_1} = \frac{30}{20} = 1.5 $$
-
-So the design meets the required gear ratio.
+### Final Result
+gear 1 (driving gear): helical gear, module 2.5mm, teeth 16, pitch diameter 40mm, helix angle 20 degrees, height 15mm, coordinate (0, 0)
+gear 2 (driven gear): helical gear, module 2.5mm, teeth 24, pitch diameter 60mm, helix angle 20 degrees, height 20mm, coordinate (50, 0)
