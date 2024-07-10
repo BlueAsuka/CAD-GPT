@@ -15,10 +15,48 @@ The core idea is **Generate the logic of generation, rather generate the result 
 
 The domain specific language and the graphic package in this project is [OpenSCAD](https://openscad.org/), which is a free CAD software that use object scripting (formal language programming) to generate 3D models. Thus, it is a good option for this project. Also, for convienience, an OpenSCAD library on Thingiverese [gear.scad](https://www.thingiverse.com/thing:636119) is also included in this project, which is placed in the folder `openscad`.
 
+![](assets/DiaofSys.png){width=100%}
+
 ## Requirement
 
-OpenSCAD
-Python >=3.9
-OpenAI API Key 
+OpenSCAD: This is the 3D modelling package for rendering the scripts. The link for download and install can be found in the [official website](https://openscad.org/).
+
+OpenAI API Key: The api key can be found on the [official website](https://platform.openai.com/account/api-keys). This is the key for accessing the GPT model remotely.
+
+Platform:The whole project is run and tested on Windows 10. And it is expected that the project can be run on other platforms with some modifications since there is no requirement for the llm model deployment on the local host. 
+
+## Usage
+
+### 1. Install the environment
+```
+Conda create -n aidea python=3.11
+conda activate aidea
+pip install -r requirements.txt
+```
+
+### 2. Set the config file
+```
+{
+    "OPENAI_API_KEY": "<YOUR OPENAI API KEY>",
+    "GPT_MODEL": "gpt-4",
+    "OPENSCAD_EXEC_PATH": "THE PATH OF OPENSCAD EXECUTABLE FILE e.g., .exe on Windows",
+}
+```
+### 3. Run the Jupyter notebook
+
+Run the Jupyter notebook in the `notebooks` directory to start the project.
 
 ## Some Examples
+System of two spur gears
+![](assets/result1.png)
+
+System of two helical gears
+![](assets/result2.png)
+
+System of two herringbone gears
+![](assets/result3.png)
+
+In above examples, the text in the red box is the requirement description as input, while textual instructions in the blue box contain obtained parameters computed by GPT-4. The images on the right is the generated CAD model after rendering by the OpenSCAD.
+
+## TODO List
+- [ ] Add
