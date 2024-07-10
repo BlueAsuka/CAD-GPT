@@ -67,5 +67,6 @@ In above examples, the text in the red box is the requirement description as inp
 - [ ] Apply a prompt tuning and soft prompt techniques to mitigate the requirement of the hand-carft prompt engineering and management.
 - [ ] Apply more advanced agentic methods for the code generation to improve the capability for code composistion and abstraction, such as the RAG or AlphaCodium.
 - [ ] Apply the current framework to a more complex system, such as this [gear system](https://hackaday.io/project/164732/gallery#f676692b124741662b011f2287a047bb).
+- [ ] Support more models such as llama3, chatGLM, etc.
 - [ ] Explore on the spatio information representation to enable the LLM can understand the spatial relationship among different components in the assembly system.
 - [ ] Explore on how to combine the current method with generative design methods.
