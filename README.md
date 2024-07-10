@@ -18,7 +18,7 @@ The core idea is **Generate the logic of generation, rather generate the result 
 
 The domain specific language and the graphic package in this project is [OpenSCAD](https://openscad.org/), which is a free CAD software that use object scripting (formal language programming) to generate 3D models. Thus, it is a good option for this project. Also, for convienience, an OpenSCAD library on Thingiverese [gear.scad](https://www.thingiverse.com/thing:636119) is also included in this project, which is placed in the folder `openscad`.
 
-![](assets/DiaofSys.png){width=100%}
+![](assets/DiaofSys.png)
 
 ## Requirement
 
