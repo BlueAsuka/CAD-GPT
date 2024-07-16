@@ -1,6 +1,4 @@
-# AIDEA
-
-#### *Artifical Intelligence, Intergrated Design Evironment, and IDEA*
+# CAD-GPT
 
 Computer-Aided Design (CAD) with GPT, a future toward AI-Aided Design (AAD) 
 
