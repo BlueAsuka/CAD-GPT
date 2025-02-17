@@ -1,6 +1,7 @@
 # CAD-GPT
 
-Computer-Aided Design (CAD) with GPT, a future toward AI-Aided Design (AAD) 
+Computer-Aided Design (CAD) with GPT, a future toward AI-Aided Design (AAD).
+ 
 The implementation of the paper: [An Investigation on Utilizing Large Language Model for Industrial Computer-Aided Design Automation
 ](https://www.sciencedirect.com/science/article/pii/S2212827124006656)
 
