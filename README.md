@@ -1,73 +1,66 @@
-# CAD-GPT
+# CAP
 
-Computer-Aided Design (CAD) with GPT, a future toward AI-Aided Design (AAD).
+CAP is a refactored continuation of the original CAD-GPT paper code illustrated in the following link:
+
+[An Investigation on Utilizing Large Language Model for Industrial Computer-Aided Design Automation](https://www.sciencedirect.com/science/article/pii/S2212827124006656)
+
+The project explores how large language models (LLMs) can support computer-aided design by generating a chain of verfiable and editable intermediate steps for engineering design. The workflow is designed to be human-readable and editable, rather than trying to generate the final geometry directly.
+
+The original implementation for the paper is preserved in [`paper_code/`](paper_code/). New work in this repository focuses on restructuring that prototype into a cleaner agentic workflow and moving the CAD backend toward [CadQuery](https://github.com/CadQuery/cadquery), a Python-native parametric CAD library.
+
+## Paper Background
+
+The paper implementation used GPT to translate a human design requirement into intermediate CAD design logic, parameter descriptions, and OpenSCAD scripts. The central idea remains:
+
+**Generate the logic of generation, rather than generate the result directly.**
+
+Instead of treating an LLM as a black-box 3D model generator, the workflow asks the model to produce inspectable, editable, domain-specific CAD instructions. Human designers can then review, validate, modify, and rerun the generated logic.
+
+## Repository Layout
+
+```text
+.
+|-- agent.py              # Early refactored agent abstraction
+|-- paper_code/           # Original paper implementation and reproduction materials
+|   |-- README.md         # Detailed guide for the paper code
+|   |-- notebooks/        # Jupyter notebooks for the original experiments
+|   |-- docs/             # The paper of the code 
+|   |-- prompts/          # Prompt templates used by the paper workflow
+|   |-- common/           # OpenSCAD gear examples and generated artifacts
+|   |-- config/           # Example configuration for the paper code
+|   `-- assets/           # Workflow diagrams and result images
+`-- LICENSE
+```
+
+## How to Read This Repository
+
+If you are new to the project, start with the paper code:
+
+1. Read [`paper_code/README.md`](paper_code/README.md) to understand the original CAD-GPT workflow. Also, read the paper to get to know more if interested in some details in the `paper_code/docs` folder.
+2. Run or inspect the notebooks in [`paper_code/notebooks/`](paper_code/notebooks/) to see how requirements are converted into CAD parameters and OpenSCAD scripts.
+3. Return to the root-level code to follow the refactoring effort toward a more modular agentic CAD system.
+4. Run the code in the `paper_code` following the commands in the README.md file.
  
-The implementation of the paper: [An Investigation on Utilizing Large Language Model for Industrial Computer-Aided Design Automation
-](https://www.sciencedirect.com/science/article/pii/S2212827124006656)
+The `paper_code/` folder is intentionally kept as a reference implementation. It is the best entry point for understanding the paper, the motivation, and the original proof of concept.
 
- ## Introduction
+## Refactoring Direction
 
-This is a repo for an experimental project that uses GPT to generate CAD models. It is not a single end-to-end model generation, but try to varify whether GPT can be used to generate small system consists of several components based on human's design requriements. In addition, this system can be later checked and validated by human operators before entering to the manufacturing state. 
+The updated repository is intended to move from a notebook-centered OpenSCAD prototype toward a more maintainable system with:
 
-The main idea is that apply GPT to generate a domain specific language (DSL) to represent the CAD models, and then use some graphic software or packages to generate the CAD models based on the generated DSL. In short, it generates the logic of generation instead of generating the final result directly. Similar idea can be found in the work of [3D-GPT](https://arxiv.org/abs/2310.12945), which apply GPT to generate a large-scale of 3D landscape with [Blender](https://www.blender.org/). By this method, human and the AI can together maintenance a same system based on the common domain specific language (DSL), therefore, the final results can be more controllable and be further customized by human.
+- A clearer agentic workflow for planning, CAD code generation, tool execution, validation, and memory.
+- A CadQuery backend for Python-native parametric CAD generation.
+- Modular components that separate prompting, model calls, design reasoning, CAD construction, validation, and export.
+- More inspectable intermediate artifacts so human designers can understand and revise the generated design logic.
+- A foundation for supporting more complex assemblies beyond the original gear examples.
 
-The core idea is **Generate the logic of generation, rather generate the result directly.**
+The current root-level `agent.py` is an early step in separating the agent loop from the original notebooks. The paper implementation should still be treated as the complete runnable baseline.
 
-## System Framework
-![](assets/CAD-GPT-workflow.jpg)
-![](assets/GPT4CAD.png)
+## Current Status
 
-The domain specific language and the graphic package in this project is [OpenSCAD](https://openscad.org/), which is a free CAD software that use object scripting (formal language programming) to generate 3D models. Thus, it is a good option for this project. Also, for convienience, an OpenSCAD library on Thingiverese [gear.scad](https://www.thingiverse.com/thing:636119) is also included in this project, which is placed in the folder `openscad`.
+This repository is in transition. The original paper code is available under `paper_code/`, while the root-level project is being refactored around a more general agentic CAD workflow and a CadQuery-based backend.
 
-![](assets/DiaofSys.png)
+Use `paper_code/` when you want to reproduce or understand the original research idea. Use the root of the repository when you want to follow or extend the updated implementation.
 
-## Requirement
+## Citation
 
-OpenSCAD: This is the 3D modelling package for rendering the scripts. The link for download and install can be found in the [official website](https://openscad.org/).
-
-OpenAI API Key: The api key can be found on the [official website](https://platform.openai.com/account/api-keys). This is the key for accessing the GPT model remotely.
-
-Platform:The whole project is run and tested on Windows 10. And it is expected that the project can be run on other platforms with some modifications since there is no requirement for the llm model deployment on the local host. 
-
-## Usage
-
-### 1. Install the environment
-```
-Conda create -n aidea python=3.11
-conda activate aidea
-pip install -r requirements.txt
-```
-
-### 2. Set the config file
-```
-{
-    "OPENAI_API_KEY": "<YOUR OPENAI API KEY>",
-    "GPT_MODEL": "gpt-4",
-    "OPENSCAD_EXEC_PATH": "THE PATH OF OPENSCAD EXECUTABLE FILE e.g., .exe on Windows",
-}
-```
-### 3. Run the Jupyter notebook
-
-Run the Jupyter notebook in the `notebooks` directory to start the project.
-
-## Some Examples
-System of two spur gears
-![](assets/result1.png)
-
-System of two helical gears
-![](assets/result2.png)
-
-System of two herringbone gears
-![](assets/result3.png)
-
-In above examples, the text in the red box is the requirement description as input, while textual instructions in the blue box contain obtained parameters computed by GPT-4. The images on the right is the generated CAD model after rendering by the OpenSCAD.
-
-## TODO List
-- [ ] Clean up and reconstruct the code from Jupyter notebook to a more structured and modular format.
-- [ ] Apply more Pythonic rendering package such as the [CADQuery](https://github.com/CadQuery/cadquery).
-- [ ] Apply a prompt tuning and soft prompt techniques to mitigate the requirement of the hand-carft prompt engineering and management.
-- [ ] Apply more advanced agentic methods for the code generation to improve the capability for code composistion and abstraction, such as the RAG or AlphaCodium.
-- [ ] Apply the current framework to a more complex system, such as this [gear system](https://hackaday.io/project/164732/gallery#f676692b124741662b011f2287a047bb).
-- [ ] Support more models such as llama3, chatGLM, etc.
-- [ ] Explore on the spatio information representation to enable the LLM can understand the spatial relationship among different components in the assembly system.
-- [ ] Explore on how to combine the current method with generative design methods.
+If you use this repository for academic work, please cite the original paper linked above.
