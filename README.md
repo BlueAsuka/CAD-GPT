@@ -64,3 +64,15 @@ Use `paper_code/` when you want to reproduce or understand the original research
 ## Citation
 
 If you use this repository for academic work, please cite the original paper linked above.
+
+```
+@article{deng2024investigation,
+  title={An investigation on utilizing large language model for industrial computer-aided design automation},
+  author={Deng, Haoxuan and Khan, Samir and Erkoyuncu, John Ahmet},
+  journal={Procedia CIRP},
+  volume={128},
+  pages={221--226},
+  year={2024},
+  publisher={Elsevier}
+}
+```
