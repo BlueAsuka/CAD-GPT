@@ -1,0 +1,50 @@
+[
+  {
+    "designation": "6004",
+    "bore_diameter_mm": 20,
+    "outer_diameter_mm": 42,
+    "width_mm": 12
+  },
+  {
+    "designation": "6005",
+    "bore_diameter_mm": 25,
+    "outer_diameter_mm": 47,
+    "width_mm": 12
+  },
+  {
+    "designation": "6006",
+    "bore_diameter_mm": 30,
+    "outer_diameter_mm": 55,
+    "width_mm": 13
+  },
+  {
+    "designation": "6007",
+    "bore_diameter_mm": 35,
+    "outer_diameter_mm": 62,
+    "width_mm": 14
+  },
+  {
+    "designation": "6008",
+    "bore_diameter_mm": 40,
+    "outer_diameter_mm": 68,
+    "width_mm": 15
+  },
+  {
+    "designation": "6009",
+    "bore_diameter_mm": 45,
+    "outer_diameter_mm": 75,
+    "width_mm": 16
+  },
+  {
+    "designation": "6010",
+    "bore_diameter_mm": 50,
+    "outer_diameter_mm": 80,
+    "width_mm": 16
+  },
+  {
+    "designation": "6012",
+    "bore_diameter_mm": 60,
+    "outer_diameter_mm": 95,
+    "width_mm": 18
+  }
+]

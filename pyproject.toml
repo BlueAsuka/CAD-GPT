@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gearen"
+version = "0.1.0"
+description = "A deterministic CadQuery MVP for single-stage gearbox concept design"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "cadquery>=2.4,<3",
+    "networkx>=3.1,<4",
+    "pydantic>=2.6,<3",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8,<9",
+]
+
+[project.scripts]
+gearen = "gearen.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["gearen*"]
+
+[tool.setuptools.package-data]
+gearen = ['data/*.json']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
