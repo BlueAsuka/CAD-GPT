@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="798" viewBox="0 0 1200 798">
+<style>
+  text { font-family: system-ui, sans-serif; fill: #172033 }
+  .node-id { font-size: 14px; font-weight: 650 }
+  .node-type, .edge-label { font-size: 11px; fill: #566174 }
+  .edge { stroke: #748094; stroke-width: 1.7; fill: none; marker-end: url(#arrow) }
+</style>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#748094"/></marker></defs>
+<text x="24" y="30" font-size="18" font-weight="700">single_stage_spur_gearbox_v1</text>
+<g><title>{&quot;axial_position&quot;: 0.0}</title><line class="edge" x1="400.0" y1="670.0" x2="400.0" y2="578.0"/>
+<rect x="361.5" y="613.0" width="77.0" height="18" rx="5" fill="white" opacity=".92"/>
+<text class="edge-label" x="400.0" y="626.0" text-anchor="middle">mounted_on</text></g>
+<g><title>{&quot;axial_position&quot;: 0.0}</title><line class="edge" x1="800.0" y1="670.0" x2="800.0" y2="578.0"/>
+<rect x="761.5" y="613.0" width="77.0" height="18" rx="5" fill="white" opacity=".92"/>
+<text class="edge-label" x="800.0" y="626.0" text-anchor="middle">mounted_on</text></g>
+<g><title>{&quot;backlash&quot;: 0.15}</title><line class="edge" x1="505.0" y1="699.0" x2="695.0" y2="699.0"/>
+<rect x="558.2" y="688.0" width="83.5" height="18" rx="5" fill="white" opacity=".92"/>
+<text class="edge-label" x="600.0" y="701.0" text-anchor="middle">meshes_with</text></g>
+<g><title>{}</title><line class="edge" x1="505.0" y1="549.0" x2="695.0" y2="549.0"/>
+<rect x="558.2" y="538.0" width="83.5" height="18" rx="5" fill="white" opacity=".92"/>
+<text class="edge-label" x="600.0" y="551.0" text-anchor="middle">parallel_to</text></g>
+<g><title>{&quot;axial_position&quot;: -72.0}</title><line class="edge" x1="270.9" y1="428.0" x2="369.1" y2="520.0"/>
+<rect x="288.0" y="463.0" width="64.0" height="18" rx="5" fill="white" opacity=".92"/>
+<text class="edge-label" x="320.0" y="476.0" text-anchor="middle">supports</text></g>
+<g><title>{&quot;axial_position&quot;: 72.0}</title><line class="edge" x1="464.5" y1="428.0" x2="415.5" y2="520.0"/>
+<rect x="408.0" y="463.0" width="64.0" height="18" rx="5" fill="white" opacity=".92"/>
+<text class="edge-label" x="440.0" y="476.0" text-anchor="middle">supports</text></g>
+<g><title>{&quot;axial_position&quot;: -72.0}</title><line class="edge" x1="735.5" y1="428.0" x2="784.5" y2="520.0"/>
+<rect x="728.0" y="463.0" width="64.0" height="18" rx="5" fill="white" opacity=".92"/>
+<text class="edge-label" x="760.0" y="476.0" text-anchor="middle">supports</text></g>
+<g><title>{&quot;axial_position&quot;: 72.0}</title><line class="edge" x1="929.1" y1="428.0" x2="830.9" y2="520.0"/>
+<rect x="848.0" y="463.0" width="64.0" height="18" rx="5" fill="white" opacity=".92"/>
+<text class="edge-label" x="880.0" y="476.0" text-anchor="middle">supports</text></g>
+<g><title>{&quot;diameter&quot;: 24.0, &quot;length&quot;: 220.0}</title><rect x="295.0" y="520.0" width="210" height="58" rx="10" fill="#f3e8ff" stroke="#6b7280"/>
+<text class="node-id" x="400.0" y="546.0" text-anchor="middle">shaft_input</text>
+<text class="node-type" x="400.0" y="565.0" text-anchor="middle">shaft</text></g>
+<g><title>{&quot;diameter&quot;: 36.0, &quot;length&quot;: 220.0}</title><rect x="695.0" y="520.0" width="210" height="58" rx="10" fill="#f3e8ff" stroke="#6b7280"/>
+<text class="node-id" x="800.0" y="546.0" text-anchor="middle">shaft_output</text>
+<text class="node-type" x="800.0" y="565.0" text-anchor="middle">shaft</text></g>
+<g><title>{&quot;module&quot;: 2.5, &quot;teeth&quot;: 20, &quot;face_width&quot;: 28.0, &quot;bore&quot;: 24.2}</title><rect x="295.0" y="670.0" width="210" height="58" rx="10" fill="#ffe4e6" stroke="#6b7280"/>
+<text class="node-id" x="400.0" y="696.0" text-anchor="middle">gear_pinion</text>
+<text class="node-type" x="400.0" y="715.0" text-anchor="middle">spur_gear</text></g>
+<g><title>{&quot;module&quot;: 2.5, &quot;teeth&quot;: 60, &quot;face_width&quot;: 28.0, &quot;bore&quot;: 36.2}</title><rect x="695.0" y="670.0" width="210" height="58" rx="10" fill="#ffe4e6" stroke="#6b7280"/>
+<text class="node-id" x="800.0" y="696.0" text-anchor="middle">gear_wheel</text>
+<text class="node-type" x="800.0" y="715.0" text-anchor="middle">spur_gear</text></g>
+<g><title>{&quot;inner_diameter&quot;: 24.2, &quot;outer_diameter&quot;: 52.0, &quot;width&quot;: 15.0}</title><rect x="135.0" y="370.0" width="210" height="58" rx="10" fill="#fef3c7" stroke="#6b7280"/>
+<text class="node-id" x="240.0" y="396.0" text-anchor="middle">bearing_input_left</text>
+<text class="node-type" x="240.0" y="415.0" text-anchor="middle">bearing</text></g>
+<g><title>{&quot;inner_diameter&quot;: 24.2, &quot;outer_diameter&quot;: 52.0, &quot;width&quot;: 15.0}</title><rect x="375.0" y="370.0" width="210" height="58" rx="10" fill="#fef3c7" stroke="#6b7280"/>
+<text class="node-id" x="480.0" y="396.0" text-anchor="middle">bearing_input_right</text>
+<text class="node-type" x="480.0" y="415.0" text-anchor="middle">bearing</text></g>
+<g><title>{&quot;inner_diameter&quot;: 36.2, &quot;outer_diameter&quot;: 72.0, &quot;width&quot;: 17.0}</title><rect x="615.0" y="370.0" width="210" height="58" rx="10" fill="#fef3c7" stroke="#6b7280"/>
+<text class="node-id" x="720.0" y="396.0" text-anchor="middle">bearing_output_left</text>
+<text class="node-type" x="720.0" y="415.0" text-anchor="middle">bearing</text></g>
+<g><title>{&quot;inner_diameter&quot;: 36.2, &quot;outer_diameter&quot;: 72.0, &quot;width&quot;: 17.0}</title><rect x="855.0" y="370.0" width="210" height="58" rx="10" fill="#fef3c7" stroke="#6b7280"/>
+<text class="node-id" x="960.0" y="396.0" text-anchor="middle">bearing_output_right</text>
+<text class="node-type" x="960.0" y="415.0" text-anchor="middle">bearing</text></g>
+<g><title>{&quot;wall&quot;: 10.0, &quot;bottom&quot;: 12.0, &quot;gear_clearance&quot;: 14.0, &quot;axial_clearance&quot;: 20.0}</title><rect x="495.0" y="70.0" width="210" height="58" rx="10" fill="#dbeafe" stroke="#6b7280"/>
+<text class="node-id" x="600.0" y="96.0" text-anchor="middle">housing_lower</text>
+<text class="node-type" x="600.0" y="115.0" text-anchor="middle">housing_lower</text></g>
+<g><title>{&quot;thickness&quot;: 10.0}</title><rect x="495.0" y="220.0" width="210" height="58" rx="10" fill="#dcfce7" stroke="#6b7280"/>
+<text class="node-id" x="600.0" y="246.0" text-anchor="middle">housing_lid</text>
+<text class="node-type" x="600.0" y="265.0" text-anchor="middle">housing_lid</text></g>
+</svg>

@@ -61,6 +61,32 @@ This repository is in transition. The original paper code is available under `pa
 
 Use `paper_code/` when you want to reproduce or understand the original research idea. Use the root of the repository when you want to follow or extend the updated implementation.
 
+## Complete Gearbox Graph to CadQuery
+
+The complete gearbox design graph can be compiled into individual STEP parts
+and a colored STEP assembly:
+
+```powershell
+python -m pip install -r requirements-cadquery.txt
+python complete_graph_to_cad.py
+```
+
+The default input is
+`example/graph/single_stage_gearbox_complete_graph.json`; use a positional
+argument to select another compatible graph. Results are written to
+`output/complete_gearbox/`. Add `--glb` to also produce a lightweight model
+for browser-based viewers:
+
+```powershell
+python complete_graph_to_cad.py path/to/graph.json -o output/my_gearbox --glb
+```
+
+The compiler treats graph constraints and relations as layout rules, expands
+pattern nodes into assembly instances, and writes all inferred fallback
+dimensions and non-geometric nodes to `build_report.json`. The generated model
+is a concept model; review that report before treating any geometry as an
+engineering or manufacturing definition.
+
 ## Citation
 
 If you use this repository for academic work, please cite the original paper linked above.

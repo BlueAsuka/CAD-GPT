@@ -1,0 +1,159 @@
+{
+  "graph_id": "single_stage_spur_gearbox_v1",
+  "units": "mm",
+  "nodes": [
+    {
+      "id": "shaft_input",
+      "type": "shaft",
+      "parameters": {
+        "diameter": 24.0,
+        "length": 220.0
+      }
+    },
+    {
+      "id": "shaft_output",
+      "type": "shaft",
+      "parameters": {
+        "diameter": 36.0,
+        "length": 220.0
+      }
+    },
+    {
+      "id": "gear_pinion",
+      "type": "spur_gear",
+      "parameters": {
+        "module": 2.5,
+        "teeth": 20,
+        "face_width": 28.0,
+        "bore": 24.2
+      }
+    },
+    {
+      "id": "gear_wheel",
+      "type": "spur_gear",
+      "parameters": {
+        "module": 2.5,
+        "teeth": 60,
+        "face_width": 28.0,
+        "bore": 36.2
+      }
+    },
+    {
+      "id": "bearing_input_left",
+      "type": "bearing",
+      "parameters": {
+        "inner_diameter": 24.2,
+        "outer_diameter": 52.0,
+        "width": 15.0
+      }
+    },
+    {
+      "id": "bearing_input_right",
+      "type": "bearing",
+      "parameters": {
+        "inner_diameter": 24.2,
+        "outer_diameter": 52.0,
+        "width": 15.0
+      }
+    },
+    {
+      "id": "bearing_output_left",
+      "type": "bearing",
+      "parameters": {
+        "inner_diameter": 36.2,
+        "outer_diameter": 72.0,
+        "width": 17.0
+      }
+    },
+    {
+      "id": "bearing_output_right",
+      "type": "bearing",
+      "parameters": {
+        "inner_diameter": 36.2,
+        "outer_diameter": 72.0,
+        "width": 17.0
+      }
+    },
+    {
+      "id": "housing_lower",
+      "type": "housing_lower",
+      "parameters": {
+        "wall": 10.0,
+        "bottom": 12.0,
+        "gear_clearance": 14.0,
+        "axial_clearance": 20.0
+      }
+    },
+    {
+      "id": "housing_lid",
+      "type": "housing_lid",
+      "parameters": {
+        "thickness": 10.0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "gear_pinion",
+      "target": "shaft_input",
+      "relation": "mounted_on",
+      "attributes": {
+        "axial_position": 0.0
+      }
+    },
+    {
+      "source": "gear_wheel",
+      "target": "shaft_output",
+      "relation": "mounted_on",
+      "attributes": {
+        "axial_position": 0.0
+      }
+    },
+    {
+      "source": "gear_pinion",
+      "target": "gear_wheel",
+      "relation": "meshes_with",
+      "attributes": {
+        "backlash": 0.15
+      }
+    },
+    {
+      "source": "shaft_input",
+      "target": "shaft_output",
+      "relation": "parallel_to",
+      "attributes": {}
+    },
+    {
+      "source": "bearing_input_left",
+      "target": "shaft_input",
+      "relation": "supports",
+      "attributes": {
+        "axial_position": -72.0
+      }
+    },
+    {
+      "source": "bearing_input_right",
+      "target": "shaft_input",
+      "relation": "supports",
+      "attributes": {
+        "axial_position": 72.0
+      }
+    },
+    {
+      "source": "bearing_output_left",
+      "target": "shaft_output",
+      "relation": "supports",
+      "attributes": {
+        "axial_position": -72.0
+      }
+    },
+    {
+      "source": "bearing_output_right",
+      "target": "shaft_output",
+      "relation": "supports",
+      "attributes": {
+        "axial_position": 72.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,1352 @@
+{
+  "schema_version": "0.3.0",
+  "document_type": "gearbox_design_graph",
+  "graph_id": "single_stage_spur_gearbox_complete_v1",
+  "title": "单级圆柱齿轮减速器——装配级完整图",
+  "assumptions": [
+    "平行轴单级直齿圆柱齿轮传动",
+    "油浴/飞溅润滑",
+    "输入轴和输出轴各采用两个滚动轴承支承",
+    "每根轴一端伸出箱体，另一端采用盲端盖",
+    "重复紧固件以 pattern 节点表示",
+    "尺寸仅用于概念演示，需经过强度、寿命、配合与制造校核"
+  ],
+  "nodes": [
+    {
+      "id": "gearbox",
+      "type": "system",
+      "label": "单级圆柱齿轮减速器",
+      "cluster": "system",
+      "properties": {
+        "stage_count": 1,
+        "gear_type": "spur",
+        "ratio": 3.0
+      }
+    },
+    {
+      "id": "housing_assembly",
+      "type": "assembly",
+      "label": "箱体总成",
+      "cluster": "housing",
+      "properties": {}
+    },
+    {
+      "id": "housing_lower",
+      "type": "housing",
+      "label": "下箱体",
+      "cluster": "housing",
+      "properties": {
+        "wall": 10.0,
+        "bottom": 12.0,
+        "gear_clearance": 14.0
+      }
+    },
+    {
+      "id": "housing_lid",
+      "type": "housing",
+      "label": "箱盖",
+      "cluster": "housing",
+      "properties": {
+        "thickness": 10.0
+      }
+    },
+    {
+      "id": "housing_joint_gasket",
+      "type": "gasket",
+      "label": "箱体结合面密封垫",
+      "cluster": "housing",
+      "properties": {
+        "material": "oil-resistant sheet"
+      }
+    },
+    {
+      "id": "housing_bolt_pattern",
+      "type": "fastener_pattern",
+      "label": "箱体连接螺栓组",
+      "cluster": "housing",
+      "properties": {
+        "specification": "M8",
+        "quantity": 12,
+        "pattern": "perimeter"
+      }
+    },
+    {
+      "id": "housing_dowel_pattern",
+      "type": "locating_pattern",
+      "label": "箱体定位销组",
+      "cluster": "housing",
+      "properties": {
+        "diameter": 6.0,
+        "quantity": 2
+      }
+    },
+    {
+      "id": "inspection_cover",
+      "type": "cover",
+      "label": "检查孔盖",
+      "cluster": "housing",
+      "properties": {}
+    },
+    {
+      "id": "inspection_gasket",
+      "type": "gasket",
+      "label": "检查孔密封垫",
+      "cluster": "housing",
+      "properties": {}
+    },
+    {
+      "id": "inspection_fastener_pattern",
+      "type": "fastener_pattern",
+      "label": "检查孔螺钉组",
+      "cluster": "housing",
+      "properties": {
+        "specification": "M6",
+        "quantity": 6
+      }
+    },
+    {
+      "id": "mounting_foot_pattern",
+      "type": "mounting_feature_pattern",
+      "label": "安装脚与地脚孔",
+      "cluster": "housing",
+      "properties": {
+        "quantity": 4
+      }
+    },
+    {
+      "id": "input_shaft_assembly",
+      "type": "assembly",
+      "label": "输入轴总成",
+      "cluster": "input",
+      "properties": {}
+    },
+    {
+      "id": "shaft_input",
+      "type": "shaft",
+      "label": "输入轴",
+      "cluster": "input",
+      "properties": {
+        "diameter": 24.0,
+        "length": 220.0
+      }
+    },
+    {
+      "id": "gear_pinion",
+      "type": "gear",
+      "label": "小齿轮",
+      "cluster": "input",
+      "properties": {
+        "module": 2.5,
+        "teeth": 20,
+        "face_width": 28.0,
+        "bore": 24.2
+      }
+    },
+    {
+      "id": "key_pinion",
+      "type": "key",
+      "label": "小齿轮平键",
+      "cluster": "input",
+      "properties": {
+        "standard": "DIN 6885 / GB-T 1096",
+        "size": "8x7"
+      }
+    },
+    {
+      "id": "bearing_input_left",
+      "type": "bearing",
+      "label": "输入轴左轴承",
+      "cluster": "input",
+      "properties": {
+        "bore": 24.2,
+        "outer_diameter": 52.0,
+        "width": 15.0
+      }
+    },
+    {
+      "id": "bearing_input_right",
+      "type": "bearing",
+      "label": "输入轴右轴承",
+      "cluster": "input",
+      "properties": {
+        "bore": 24.2,
+        "outer_diameter": 52.0,
+        "width": 15.0
+      }
+    },
+    {
+      "id": "input_spacer",
+      "type": "spacer",
+      "label": "输入轴隔套",
+      "cluster": "input",
+      "properties": {}
+    },
+    {
+      "id": "input_retainer",
+      "type": "retaining_element",
+      "label": "输入轴锁紧件",
+      "cluster": "input",
+      "properties": {
+        "option": "locknut or circlip"
+      }
+    },
+    {
+      "id": "input_through_cover",
+      "type": "bearing_end_cover",
+      "label": "输入侧通孔端盖",
+      "cluster": "input",
+      "properties": {}
+    },
+    {
+      "id": "input_blind_cover",
+      "type": "bearing_end_cover",
+      "label": "输入侧盲端盖",
+      "cluster": "input",
+      "properties": {}
+    },
+    {
+      "id": "input_radial_seal",
+      "type": "radial_shaft_seal",
+      "label": "输入轴油封",
+      "cluster": "input",
+      "properties": {
+        "nominal_shaft_diameter": 24.0
+      }
+    },
+    {
+      "id": "input_cover_gasket_pattern",
+      "type": "gasket_pattern",
+      "label": "输入端盖密封垫组",
+      "cluster": "input",
+      "properties": {
+        "quantity": 2
+      }
+    },
+    {
+      "id": "input_cover_fastener_pattern",
+      "type": "fastener_pattern",
+      "label": "输入端盖螺钉组",
+      "cluster": "input",
+      "properties": {
+        "specification": "M6",
+        "quantity": 8
+      }
+    },
+    {
+      "id": "input_coupling_interface",
+      "type": "external_interface",
+      "label": "输入联轴器接口",
+      "cluster": "input",
+      "properties": {
+        "role": "power_input"
+      }
+    },
+    {
+      "id": "output_shaft_assembly",
+      "type": "assembly",
+      "label": "输出轴总成",
+      "cluster": "output",
+      "properties": {}
+    },
+    {
+      "id": "shaft_output",
+      "type": "shaft",
+      "label": "输出轴",
+      "cluster": "output",
+      "properties": {
+        "diameter": 36.0,
+        "length": 220.0
+      }
+    },
+    {
+      "id": "gear_wheel",
+      "type": "gear",
+      "label": "大齿轮",
+      "cluster": "output",
+      "properties": {
+        "module": 2.5,
+        "teeth": 60,
+        "face_width": 28.0,
+        "bore": 36.2
+      }
+    },
+    {
+      "id": "key_wheel",
+      "type": "key",
+      "label": "大齿轮平键",
+      "cluster": "output",
+      "properties": {
+        "standard": "DIN 6885 / GB-T 1096",
+        "size": "10x8"
+      }
+    },
+    {
+      "id": "bearing_output_left",
+      "type": "bearing",
+      "label": "输出轴左轴承",
+      "cluster": "output",
+      "properties": {
+        "bore": 36.2,
+        "outer_diameter": 72.0,
+        "width": 17.0
+      }
+    },
+    {
+      "id": "bearing_output_right",
+      "type": "bearing",
+      "label": "输出轴右轴承",
+      "cluster": "output",
+      "properties": {
+        "bore": 36.2,
+        "outer_diameter": 72.0,
+        "width": 17.0
+      }
+    },
+    {
+      "id": "output_spacer",
+      "type": "spacer",
+      "label": "输出轴隔套",
+      "cluster": "output",
+      "properties": {}
+    },
+    {
+      "id": "output_retainer",
+      "type": "retaining_element",
+      "label": "输出轴锁紧件",
+      "cluster": "output",
+      "properties": {
+        "option": "locknut or circlip"
+      }
+    },
+    {
+      "id": "output_through_cover",
+      "type": "bearing_end_cover",
+      "label": "输出侧通孔端盖",
+      "cluster": "output",
+      "properties": {}
+    },
+    {
+      "id": "output_blind_cover",
+      "type": "bearing_end_cover",
+      "label": "输出侧盲端盖",
+      "cluster": "output",
+      "properties": {}
+    },
+    {
+      "id": "output_radial_seal",
+      "type": "radial_shaft_seal",
+      "label": "输出轴油封",
+      "cluster": "output",
+      "properties": {
+        "nominal_shaft_diameter": 36.0
+      }
+    },
+    {
+      "id": "output_cover_gasket_pattern",
+      "type": "gasket_pattern",
+      "label": "输出端盖密封垫组",
+      "cluster": "output",
+      "properties": {
+        "quantity": 2
+      }
+    },
+    {
+      "id": "output_cover_fastener_pattern",
+      "type": "fastener_pattern",
+      "label": "输出端盖螺钉组",
+      "cluster": "output",
+      "properties": {
+        "specification": "M6",
+        "quantity": 8
+      }
+    },
+    {
+      "id": "output_coupling_interface",
+      "type": "external_interface",
+      "label": "输出联轴器接口",
+      "cluster": "output",
+      "properties": {
+        "role": "power_output"
+      }
+    },
+    {
+      "id": "lubrication_assembly",
+      "type": "assembly",
+      "label": "润滑与维护总成",
+      "cluster": "service",
+      "properties": {
+        "method": "oil bath"
+      }
+    },
+    {
+      "id": "oil_sump",
+      "type": "lubrication_region",
+      "label": "油池区域",
+      "cluster": "service",
+      "properties": {}
+    },
+    {
+      "id": "breather_plug",
+      "type": "service_component",
+      "label": "通气塞",
+      "cluster": "service",
+      "properties": {}
+    },
+    {
+      "id": "oil_fill_plug",
+      "type": "service_component",
+      "label": "注油塞",
+      "cluster": "service",
+      "properties": {}
+    },
+    {
+      "id": "oil_level_indicator",
+      "type": "service_component",
+      "label": "油位指示器",
+      "cluster": "service",
+      "properties": {}
+    },
+    {
+      "id": "drain_plug",
+      "type": "service_component",
+      "label": "放油塞",
+      "cluster": "service",
+      "properties": {
+        "option": "magnetic"
+      }
+    },
+    {
+      "id": "C_center_distance",
+      "type": "constraint",
+      "label": "中心距约束",
+      "cluster": "constraints",
+      "properties": {
+        "expression": "a=m(z1+z2)/2",
+        "value": 100.0,
+        "unit": "mm",
+        "hardness": "hard"
+      }
+    },
+    {
+      "id": "C_gear_mesh",
+      "type": "constraint",
+      "label": "齿轮啮合兼容",
+      "cluster": "constraints",
+      "properties": {
+        "requirements": [
+          "same_module",
+          "same_pressure_angle",
+          "parallel_axes",
+          "backlash=0.15 mm"
+        ],
+        "hardness": "hard"
+      }
+    },
+    {
+      "id": "C_axial_location",
+      "type": "constraint",
+      "label": "轴向定位约束",
+      "cluster": "constraints",
+      "properties": {
+        "hardness": "hard"
+      }
+    },
+    {
+      "id": "C_housing_clearance",
+      "type": "constraint",
+      "label": "箱体间隙约束",
+      "cluster": "constraints",
+      "properties": {
+        "minimum_gear_clearance": 14.0,
+        "unit": "mm",
+        "hardness": "hard"
+      }
+    },
+    {
+      "id": "C_split_joint",
+      "type": "constraint",
+      "label": "剖分面连接约束",
+      "cluster": "constraints",
+      "properties": {
+        "requirements": [
+          "coplanar",
+          "bolt_holes_aligned",
+          "dowels_locate",
+          "gasket_compressed"
+        ],
+        "hardness": "hard"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "gearbox",
+      "target": "housing_assembly",
+      "relation": "contains",
+      "label": "包含",
+      "properties": {}
+    },
+    {
+      "source": "gearbox",
+      "target": "input_shaft_assembly",
+      "relation": "contains",
+      "label": "包含",
+      "properties": {}
+    },
+    {
+      "source": "gearbox",
+      "target": "output_shaft_assembly",
+      "relation": "contains",
+      "label": "包含",
+      "properties": {}
+    },
+    {
+      "source": "gearbox",
+      "target": "lubrication_assembly",
+      "relation": "contains",
+      "label": "包含",
+      "properties": {}
+    },
+    {
+      "source": "housing_assembly",
+      "target": "housing_lower",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "housing_assembly",
+      "target": "housing_lid",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "housing_assembly",
+      "target": "housing_joint_gasket",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "housing_assembly",
+      "target": "housing_bolt_pattern",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "housing_assembly",
+      "target": "housing_dowel_pattern",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "housing_assembly",
+      "target": "inspection_cover",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "housing_assembly",
+      "target": "inspection_gasket",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "housing_assembly",
+      "target": "inspection_fastener_pattern",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "housing_assembly",
+      "target": "mounting_foot_pattern",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "housing_lid",
+      "target": "housing_lower",
+      "relation": "mated_with",
+      "label": "剖分面配合",
+      "properties": {}
+    },
+    {
+      "source": "housing_bolt_pattern",
+      "target": "housing_lid",
+      "relation": "fastens",
+      "label": "紧固",
+      "properties": {}
+    },
+    {
+      "source": "housing_bolt_pattern",
+      "target": "housing_lower",
+      "relation": "fastens",
+      "label": "紧固",
+      "properties": {}
+    },
+    {
+      "source": "housing_dowel_pattern",
+      "target": "housing_lid",
+      "relation": "locates",
+      "label": "定位",
+      "properties": {}
+    },
+    {
+      "source": "housing_dowel_pattern",
+      "target": "housing_lower",
+      "relation": "locates",
+      "label": "定位",
+      "properties": {}
+    },
+    {
+      "source": "housing_joint_gasket",
+      "target": "housing_lid",
+      "relation": "seals",
+      "label": "密封",
+      "properties": {}
+    },
+    {
+      "source": "housing_joint_gasket",
+      "target": "housing_lower",
+      "relation": "seals",
+      "label": "密封",
+      "properties": {}
+    },
+    {
+      "source": "inspection_cover",
+      "target": "housing_lid",
+      "relation": "mounted_on",
+      "label": "安装于",
+      "properties": {}
+    },
+    {
+      "source": "inspection_gasket",
+      "target": "inspection_cover",
+      "relation": "seals",
+      "label": "密封",
+      "properties": {}
+    },
+    {
+      "source": "inspection_gasket",
+      "target": "housing_lid",
+      "relation": "seals",
+      "label": "密封",
+      "properties": {}
+    },
+    {
+      "source": "inspection_fastener_pattern",
+      "target": "inspection_cover",
+      "relation": "fastens",
+      "label": "紧固",
+      "properties": {}
+    },
+    {
+      "source": "inspection_fastener_pattern",
+      "target": "housing_lid",
+      "relation": "fastens",
+      "label": "紧固",
+      "properties": {}
+    },
+    {
+      "source": "mounting_foot_pattern",
+      "target": "housing_lower",
+      "relation": "integral_with",
+      "label": "一体特征",
+      "properties": {}
+    },
+    {
+      "source": "input_shaft_assembly",
+      "target": "shaft_input",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "input_shaft_assembly",
+      "target": "gear_pinion",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "input_shaft_assembly",
+      "target": "key_pinion",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "input_shaft_assembly",
+      "target": "bearing_input_left",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "input_shaft_assembly",
+      "target": "bearing_input_right",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "input_shaft_assembly",
+      "target": "input_spacer",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "input_shaft_assembly",
+      "target": "input_retainer",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "input_shaft_assembly",
+      "target": "input_through_cover",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "input_shaft_assembly",
+      "target": "input_blind_cover",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "input_shaft_assembly",
+      "target": "input_radial_seal",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "input_shaft_assembly",
+      "target": "input_cover_gasket_pattern",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "input_shaft_assembly",
+      "target": "input_cover_fastener_pattern",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "input_shaft_assembly",
+      "target": "input_coupling_interface",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "gear_pinion",
+      "target": "shaft_input",
+      "relation": "mounted_on",
+      "label": "安装于",
+      "properties": {
+        "axial_position": 0.0
+      }
+    },
+    {
+      "source": "key_pinion",
+      "target": "gear_pinion",
+      "relation": "fitted_in",
+      "label": "嵌入键槽",
+      "properties": {}
+    },
+    {
+      "source": "key_pinion",
+      "target": "shaft_input",
+      "relation": "locks_rotation",
+      "label": "周向固定",
+      "properties": {}
+    },
+    {
+      "source": "bearing_input_left",
+      "target": "shaft_input",
+      "relation": "supports",
+      "label": "支承",
+      "properties": {
+        "axial_position": -72.0
+      }
+    },
+    {
+      "source": "bearing_input_right",
+      "target": "shaft_input",
+      "relation": "supports",
+      "label": "支承",
+      "properties": {
+        "axial_position": 72.0
+      }
+    },
+    {
+      "source": "bearing_input_left",
+      "target": "housing_lower",
+      "relation": "seated_in",
+      "label": "装入轴承座",
+      "properties": {}
+    },
+    {
+      "source": "bearing_input_right",
+      "target": "housing_lower",
+      "relation": "seated_in",
+      "label": "装入轴承座",
+      "properties": {}
+    },
+    {
+      "source": "input_spacer",
+      "target": "gear_pinion",
+      "relation": "locates_axially",
+      "label": "轴向定位",
+      "properties": {}
+    },
+    {
+      "source": "input_spacer",
+      "target": "bearing_input_right",
+      "relation": "locates_axially",
+      "label": "轴向定位",
+      "properties": {}
+    },
+    {
+      "source": "input_retainer",
+      "target": "shaft_input",
+      "relation": "retains_axially",
+      "label": "轴向锁紧",
+      "properties": {}
+    },
+    {
+      "source": "input_through_cover",
+      "target": "housing_lower",
+      "relation": "bolted_to",
+      "label": "螺钉连接",
+      "properties": {}
+    },
+    {
+      "source": "input_blind_cover",
+      "target": "housing_lower",
+      "relation": "bolted_to",
+      "label": "螺钉连接",
+      "properties": {}
+    },
+    {
+      "source": "input_cover_fastener_pattern",
+      "target": "input_through_cover",
+      "relation": "fastens",
+      "label": "紧固",
+      "properties": {}
+    },
+    {
+      "source": "input_cover_fastener_pattern",
+      "target": "input_blind_cover",
+      "relation": "fastens",
+      "label": "紧固",
+      "properties": {}
+    },
+    {
+      "source": "input_cover_gasket_pattern",
+      "target": "housing_lower",
+      "relation": "seals",
+      "label": "密封",
+      "properties": {}
+    },
+    {
+      "source": "input_cover_gasket_pattern",
+      "target": "input_through_cover",
+      "relation": "seals",
+      "label": "密封",
+      "properties": {}
+    },
+    {
+      "source": "input_cover_gasket_pattern",
+      "target": "input_blind_cover",
+      "relation": "seals",
+      "label": "密封",
+      "properties": {}
+    },
+    {
+      "source": "input_radial_seal",
+      "target": "input_through_cover",
+      "relation": "press_fitted_in",
+      "label": "压装于",
+      "properties": {}
+    },
+    {
+      "source": "input_radial_seal",
+      "target": "shaft_input",
+      "relation": "seals_against",
+      "label": "唇口密封",
+      "properties": {}
+    },
+    {
+      "source": "shaft_input",
+      "target": "input_through_cover",
+      "relation": "passes_through",
+      "label": "穿过",
+      "properties": {}
+    },
+    {
+      "source": "input_coupling_interface",
+      "target": "shaft_input",
+      "relation": "mounted_on",
+      "label": "连接输入端",
+      "properties": {}
+    },
+    {
+      "source": "output_shaft_assembly",
+      "target": "shaft_output",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "output_shaft_assembly",
+      "target": "gear_wheel",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "output_shaft_assembly",
+      "target": "key_wheel",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "output_shaft_assembly",
+      "target": "bearing_output_left",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "output_shaft_assembly",
+      "target": "bearing_output_right",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "output_shaft_assembly",
+      "target": "output_spacer",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "output_shaft_assembly",
+      "target": "output_retainer",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "output_shaft_assembly",
+      "target": "output_through_cover",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "output_shaft_assembly",
+      "target": "output_blind_cover",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "output_shaft_assembly",
+      "target": "output_radial_seal",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "output_shaft_assembly",
+      "target": "output_cover_gasket_pattern",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "output_shaft_assembly",
+      "target": "output_cover_fastener_pattern",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "output_shaft_assembly",
+      "target": "output_coupling_interface",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "gear_wheel",
+      "target": "shaft_output",
+      "relation": "mounted_on",
+      "label": "安装于",
+      "properties": {
+        "axial_position": 0.0
+      }
+    },
+    {
+      "source": "key_wheel",
+      "target": "gear_wheel",
+      "relation": "fitted_in",
+      "label": "嵌入键槽",
+      "properties": {}
+    },
+    {
+      "source": "key_wheel",
+      "target": "shaft_output",
+      "relation": "locks_rotation",
+      "label": "周向固定",
+      "properties": {}
+    },
+    {
+      "source": "bearing_output_left",
+      "target": "shaft_output",
+      "relation": "supports",
+      "label": "支承",
+      "properties": {
+        "axial_position": -72.0
+      }
+    },
+    {
+      "source": "bearing_output_right",
+      "target": "shaft_output",
+      "relation": "supports",
+      "label": "支承",
+      "properties": {
+        "axial_position": 72.0
+      }
+    },
+    {
+      "source": "bearing_output_left",
+      "target": "housing_lower",
+      "relation": "seated_in",
+      "label": "装入轴承座",
+      "properties": {}
+    },
+    {
+      "source": "bearing_output_right",
+      "target": "housing_lower",
+      "relation": "seated_in",
+      "label": "装入轴承座",
+      "properties": {}
+    },
+    {
+      "source": "output_spacer",
+      "target": "gear_wheel",
+      "relation": "locates_axially",
+      "label": "轴向定位",
+      "properties": {}
+    },
+    {
+      "source": "output_spacer",
+      "target": "bearing_output_right",
+      "relation": "locates_axially",
+      "label": "轴向定位",
+      "properties": {}
+    },
+    {
+      "source": "output_retainer",
+      "target": "shaft_output",
+      "relation": "retains_axially",
+      "label": "轴向锁紧",
+      "properties": {}
+    },
+    {
+      "source": "output_through_cover",
+      "target": "housing_lower",
+      "relation": "bolted_to",
+      "label": "螺钉连接",
+      "properties": {}
+    },
+    {
+      "source": "output_blind_cover",
+      "target": "housing_lower",
+      "relation": "bolted_to",
+      "label": "螺钉连接",
+      "properties": {}
+    },
+    {
+      "source": "output_cover_fastener_pattern",
+      "target": "output_through_cover",
+      "relation": "fastens",
+      "label": "紧固",
+      "properties": {}
+    },
+    {
+      "source": "output_cover_fastener_pattern",
+      "target": "output_blind_cover",
+      "relation": "fastens",
+      "label": "紧固",
+      "properties": {}
+    },
+    {
+      "source": "output_cover_gasket_pattern",
+      "target": "housing_lower",
+      "relation": "seals",
+      "label": "密封",
+      "properties": {}
+    },
+    {
+      "source": "output_cover_gasket_pattern",
+      "target": "output_through_cover",
+      "relation": "seals",
+      "label": "密封",
+      "properties": {}
+    },
+    {
+      "source": "output_cover_gasket_pattern",
+      "target": "output_blind_cover",
+      "relation": "seals",
+      "label": "密封",
+      "properties": {}
+    },
+    {
+      "source": "output_radial_seal",
+      "target": "output_through_cover",
+      "relation": "press_fitted_in",
+      "label": "压装于",
+      "properties": {}
+    },
+    {
+      "source": "output_radial_seal",
+      "target": "shaft_output",
+      "relation": "seals_against",
+      "label": "唇口密封",
+      "properties": {}
+    },
+    {
+      "source": "shaft_output",
+      "target": "output_through_cover",
+      "relation": "passes_through",
+      "label": "穿过",
+      "properties": {}
+    },
+    {
+      "source": "output_coupling_interface",
+      "target": "shaft_output",
+      "relation": "mounted_on",
+      "label": "连接输出端",
+      "properties": {}
+    },
+    {
+      "source": "gear_pinion",
+      "target": "gear_wheel",
+      "relation": "meshes_with",
+      "label": "啮合",
+      "properties": {
+        "backlash": 0.15
+      }
+    },
+    {
+      "source": "shaft_input",
+      "target": "shaft_output",
+      "relation": "parallel_to",
+      "label": "轴线平行",
+      "properties": {}
+    },
+    {
+      "source": "lubrication_assembly",
+      "target": "oil_sump",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "lubrication_assembly",
+      "target": "breather_plug",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "lubrication_assembly",
+      "target": "oil_fill_plug",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "lubrication_assembly",
+      "target": "oil_level_indicator",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "lubrication_assembly",
+      "target": "drain_plug",
+      "relation": "contains",
+      "label": "组成",
+      "properties": {}
+    },
+    {
+      "source": "oil_sump",
+      "target": "housing_lower",
+      "relation": "contained_in",
+      "label": "位于内部",
+      "properties": {}
+    },
+    {
+      "source": "oil_sump",
+      "target": "gear_wheel",
+      "relation": "lubricates",
+      "label": "飞溅润滑",
+      "properties": {}
+    },
+    {
+      "source": "oil_sump",
+      "target": "gear_pinion",
+      "relation": "lubricates",
+      "label": "飞溅润滑",
+      "properties": {}
+    },
+    {
+      "source": "breather_plug",
+      "target": "housing_lid",
+      "relation": "mounted_on",
+      "label": "安装于",
+      "properties": {}
+    },
+    {
+      "source": "oil_fill_plug",
+      "target": "housing_lid",
+      "relation": "mounted_on",
+      "label": "安装于",
+      "properties": {}
+    },
+    {
+      "source": "oil_level_indicator",
+      "target": "housing_lower",
+      "relation": "mounted_on",
+      "label": "安装于",
+      "properties": {}
+    },
+    {
+      "source": "drain_plug",
+      "target": "housing_lower",
+      "relation": "mounted_on",
+      "label": "安装于底部",
+      "properties": {}
+    },
+    {
+      "source": "C_center_distance",
+      "target": "gear_pinion",
+      "relation": "constrains",
+      "label": "约束",
+      "properties": {
+        "role": "gear_1"
+      }
+    },
+    {
+      "source": "C_center_distance",
+      "target": "gear_wheel",
+      "relation": "constrains",
+      "label": "约束",
+      "properties": {
+        "role": "gear_2"
+      }
+    },
+    {
+      "source": "C_center_distance",
+      "target": "shaft_input",
+      "relation": "constrains",
+      "label": "约束",
+      "properties": {
+        "role": "axis_1"
+      }
+    },
+    {
+      "source": "C_center_distance",
+      "target": "shaft_output",
+      "relation": "constrains",
+      "label": "约束",
+      "properties": {
+        "role": "axis_2"
+      }
+    },
+    {
+      "source": "C_gear_mesh",
+      "target": "gear_pinion",
+      "relation": "constrains",
+      "label": "约束",
+      "properties": {}
+    },
+    {
+      "source": "C_gear_mesh",
+      "target": "gear_wheel",
+      "relation": "constrains",
+      "label": "约束",
+      "properties": {}
+    },
+    {
+      "source": "C_axial_location",
+      "target": "input_shaft_assembly",
+      "relation": "constrains",
+      "label": "约束",
+      "properties": {}
+    },
+    {
+      "source": "C_axial_location",
+      "target": "output_shaft_assembly",
+      "relation": "constrains",
+      "label": "约束",
+      "properties": {}
+    },
+    {
+      "source": "C_housing_clearance",
+      "target": "housing_assembly",
+      "relation": "constrains",
+      "label": "约束",
+      "properties": {}
+    },
+    {
+      "source": "C_housing_clearance",
+      "target": "gear_pinion",
+      "relation": "constrains",
+      "label": "约束",
+      "properties": {}
+    },
+    {
+      "source": "C_housing_clearance",
+      "target": "gear_wheel",
+      "relation": "constrains",
+      "label": "约束",
+      "properties": {}
+    },
+    {
+      "source": "C_split_joint",
+      "target": "housing_lid",
+      "relation": "constrains",
+      "label": "约束",
+      "properties": {}
+    },
+    {
+      "source": "C_split_joint",
+      "target": "housing_lower",
+      "relation": "constrains",
+      "label": "约束",
+      "properties": {}
+    }
+  ]
+}

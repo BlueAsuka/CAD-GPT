@@ -1,0 +1,93 @@
+{
+  "graph_id": "single_stage_spur_gearbox_complete_v1",
+  "units": "mm",
+  "derived_design": {
+    "center_distance": 100.0,
+    "housing_length": 193.0,
+    "housing_width": 253.0,
+    "lower_height": 103.5,
+    "upper_height": 101.5,
+    "center_y": 25.0,
+    "wall": 10.0,
+    "bottom": 12.0,
+    "clearance": 14.0,
+    "axes_y": {
+      "shaft_input": -50.0,
+      "shaft_output": 50.0
+    },
+    "bearing_x": {
+      "bearing_input_left": -72.0,
+      "bearing_input_right": 72.0,
+      "bearing_output_left": -72.0,
+      "bearing_output_right": 72.0
+    },
+    "bearing_od": {
+      "shaft_input": 52.0,
+      "shaft_output": 72.0
+    }
+  },
+  "compiled_nodes": [
+    "bearing_input_left",
+    "bearing_input_right",
+    "bearing_output_left",
+    "bearing_output_right",
+    "breather_plug",
+    "drain_plug",
+    "gear_pinion",
+    "gear_wheel",
+    "housing_bolt_pattern",
+    "housing_dowel_pattern",
+    "housing_joint_gasket",
+    "housing_lid",
+    "housing_lower",
+    "input_blind_cover",
+    "input_cover_fastener_pattern",
+    "input_cover_gasket_pattern",
+    "input_radial_seal",
+    "input_retainer",
+    "input_spacer",
+    "input_through_cover",
+    "inspection_cover",
+    "inspection_fastener_pattern",
+    "inspection_gasket",
+    "key_pinion",
+    "key_wheel",
+    "oil_fill_plug",
+    "oil_level_indicator",
+    "output_blind_cover",
+    "output_cover_fastener_pattern",
+    "output_cover_gasket_pattern",
+    "output_radial_seal",
+    "output_retainer",
+    "output_spacer",
+    "output_through_cover",
+    "shaft_input",
+    "shaft_output"
+  ],
+  "instance_count": 69,
+  "realized_as_features": [
+    "mounting_foot_pattern"
+  ],
+  "non_geometric_nodes": [
+    "C_axial_location",
+    "C_center_distance",
+    "C_gear_mesh",
+    "C_housing_clearance",
+    "C_split_joint",
+    "gearbox",
+    "housing_assembly",
+    "input_coupling_interface",
+    "input_shaft_assembly",
+    "lubrication_assembly",
+    "oil_sump",
+    "output_coupling_interface",
+    "output_shaft_assembly"
+  ],
+  "concept_defaults": [
+    "Spur teeth use a trapezoidal approximation, not an involute profile.",
+    "Backlash is metadata; the hard 100 mm center-distance constraint controls layout.",
+    "Cover, gasket, seal, spacer, retainer, fastener, foot, inspection, and service dimensions are derived defaults.",
+    "Bearings and seals are simplified envelopes rather than catalog geometry.",
+    "Threads, fillets, tolerances, fits, lubrication passages, and manufacturing details are omitted."
+  ]
+}

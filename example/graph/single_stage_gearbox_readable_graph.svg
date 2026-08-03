@@ -1,0 +1,447 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1480" viewBox="0 0 1800 1480">
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="context-stroke"/></marker>
+<filter id="shadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.10"/></filter>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="42" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="750" fill="#0f172a" text-anchor="start" opacity="1.0">单级圆柱齿轮减速器：装配级完整 Graph</text>
+<text x="40" y="70" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start" opacity="1.0">50 个节点 · 121 条关系；本视图保留关键装配关系，完整关系见 JSON</text>
+<g><title>{&quot;stage_count&quot;: 1, &quot;gear_type&quot;: &quot;spur&quot;, &quot;ratio&quot;: 3.0}</title>
+<rect x="700" y="92" width="400" height="66" rx="10" fill="#0f172a" stroke="#ffffff" stroke-width="1.3"/>
+<text x="900.0" y="115" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#ffffff" text-anchor="middle" opacity="1.0">单级圆柱齿轮减速器</text>
+<text x="900.0" y="133" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">i=3.0 · m=2.5 · z₁/z₂=20/60</text>
+</g>
+<rect x="35" y="190" width="395" height="815" rx="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="57" y="224" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="start" opacity="1.0">箱体总成</text>
+<text x="57" y="247" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start" opacity="1.0">承载、定位、密封与安装</text>
+<line x1="53" y1="260" x2="412" y2="260" stroke="#e2e8f0"/>
+<rect x="465" y="190" width="625" height="815" rx="18" fill="#faf5ff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="487" y="224" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="start" opacity="1.0">输入轴总成</text>
+<text x="487" y="247" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start" opacity="1.0">输入动力、支承、密封与小齿轮</text>
+<line x1="483" y1="260" x2="1072" y2="260" stroke="#e2e8f0"/>
+<rect x="1120" y="190" width="645" height="815" rx="18" fill="#fff7ed" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="1142" y="224" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="start" opacity="1.0">输出轴总成</text>
+<text x="1142" y="247" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start" opacity="1.0">输出动力、支承、密封与大齿轮</text>
+<line x1="1138" y1="260" x2="1747" y2="260" stroke="#e2e8f0"/>
+<rect x="35" y="1040" width="785" height="375" rx="18" fill="#f7fee7" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="57" y="1074" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="start" opacity="1.0">润滑与维护总成</text>
+<text x="57" y="1097" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start" opacity="1.0">油浴/飞溅润滑及维护接口</text>
+<line x1="53" y1="1110" x2="802" y2="1110" stroke="#e2e8f0"/>
+<rect x="850" y="1040" width="915" height="375" rx="18" fill="#fef2f2" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="872" y="1074" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="start" opacity="1.0">关键约束</text>
+<text x="872" y="1097" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start" opacity="1.0">显式约束节点可被求解器与校核模块读取</text>
+<line x1="868" y1="1110" x2="1747" y2="1110" stroke="#e2e8f0"/>
+<path d="M 900 158 L 232 190" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="547.0" y="164.0" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="566.0" y="178.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#94a3b8" text-anchor="middle" opacity="1.0">包含</text>
+<path d="M 900 158 L 777 190" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="819.5" y="164.0" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="838.5" y="178.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#94a3b8" text-anchor="middle" opacity="1.0">包含</text>
+<path d="M 900 158 L 1442 190" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1152.0" y="164.0" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1171.0" y="178.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#94a3b8" text-anchor="middle" opacity="1.0">包含</text>
+<path d="M 900 158 L 900 1018 L 420 1040" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="881.0" y="1008" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="900" y="1022" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#94a3b8" text-anchor="middle" opacity="1.0">包含</text>
+<g><title>{&quot;specification&quot;: &quot;M6&quot;, &quot;quantity&quot;: 6}</title>
+<rect x="52" y="280" width="155" height="56" rx="10" fill="#ede9fe" stroke="#5b21b6" stroke-width="1.3"/>
+<text x="129.5" y="303" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#5b21b6" text-anchor="middle" opacity="1.0">检查孔螺钉组</text>
+<text x="129.5" y="321" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">M6 × 6</text>
+</g>
+<g><title>{}</title>
+<rect x="237" y="280" width="160" height="56" rx="10" fill="#e0f2fe" stroke="#075985" stroke-width="1.3"/>
+<text x="317.0" y="303" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#075985" text-anchor="middle" opacity="1.0">检查孔盖</text>
+<text x="317.0" y="321" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">inspection_cover</text>
+</g>
+<g><title>{}</title>
+<rect x="237" y="365" width="160" height="56" rx="10" fill="#ffedd5" stroke="#9a3412" stroke-width="1.3"/>
+<text x="317.0" y="388" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#9a3412" text-anchor="middle" opacity="1.0">检查孔密封垫</text>
+<text x="317.0" y="406" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">inspection_gasket</text>
+</g>
+<g><title>{&quot;thickness&quot;: 10.0}</title>
+<rect x="130" y="450" width="205" height="62" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="1.3"/>
+<text x="232.5" y="473" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#334155" text-anchor="middle" opacity="1.0">箱盖</text>
+<text x="232.5" y="491" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">t=10 mm</text>
+</g>
+<g><title>{&quot;specification&quot;: &quot;M8&quot;, &quot;quantity&quot;: 12, &quot;pattern&quot;: &quot;perimeter&quot;}</title>
+<rect x="50" y="555" width="145" height="56" rx="10" fill="#ede9fe" stroke="#5b21b6" stroke-width="1.3"/>
+<text x="122.5" y="578" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#5b21b6" text-anchor="middle" opacity="1.0">箱体连接螺栓组</text>
+<text x="122.5" y="596" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">M8 × 12</text>
+</g>
+<g><title>{&quot;material&quot;: &quot;oil-resistant sheet&quot;}</title>
+<rect x="210" y="555" width="170" height="56" rx="10" fill="#ffedd5" stroke="#9a3412" stroke-width="1.3"/>
+<text x="295.0" y="578" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#9a3412" text-anchor="middle" opacity="1.0">箱体结合面密封垫</text>
+<text x="295.0" y="596" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">housing_joint_gasket</text>
+</g>
+<g><title>{&quot;diameter&quot;: 6.0, &quot;quantity&quot;: 2}</title>
+<rect x="50" y="650" width="145" height="56" rx="10" fill="#ede9fe" stroke="#5b21b6" stroke-width="1.3"/>
+<text x="122.5" y="673" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#5b21b6" text-anchor="middle" opacity="1.0">箱体定位销组</text>
+<text x="122.5" y="691" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">Ø6 × 2</text>
+</g>
+<g><title>{&quot;wall&quot;: 10.0, &quot;bottom&quot;: 12.0, &quot;gear_clearance&quot;: 14.0}</title>
+<rect x="205" y="650" width="180" height="66" rx="10" fill="#e2e8f0" stroke="#334155" stroke-width="1.3"/>
+<text x="295.0" y="673" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#334155" text-anchor="middle" opacity="1.0">下箱体</text>
+<text x="295.0" y="691" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">wall=10 · bottom=12 mm</text>
+</g>
+<g><title>{&quot;quantity&quot;: 4}</title>
+<rect x="125" y="780" width="210" height="58" rx="10" fill="#ede9fe" stroke="#5b21b6" stroke-width="1.3"/>
+<text x="230.0" y="803" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#5b21b6" text-anchor="middle" opacity="1.0">安装脚与地脚孔</text>
+<text x="230.0" y="821" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">4 处安装脚/地脚孔</text>
+</g>
+<path d="M 207 308.0 L 237 308.0" fill="none" stroke="#7c3aed" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="203.0" y="298.0" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="222.0" y="312.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#7c3aed" text-anchor="middle" opacity="1.0">紧固</text>
+<path d="M 317.0 336 L 317.0 365" fill="none" stroke="#ea580c" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="298.0" y="340.5" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="317.0" y="354.5" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#ea580c" text-anchor="middle" opacity="1.0">压紧</text>
+<path d="M 317.0 421 L 232.5 450" fill="none" stroke="#ea580c" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="255.75" y="425.5" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="274.75" y="439.5" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#ea580c" text-anchor="middle" opacity="1.0">密封</text>
+<path d="M 232.5 512 L 295.0 555" fill="none" stroke="#ea580c" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="239.75" y="523.5" width="48" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="263.75" y="537.5" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#ea580c" text-anchor="middle" opacity="1.0">剖分面</text>
+<path d="M 195 583.0 L 210 583.0" fill="none" stroke="#7c3aed" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="183.5" y="573.0" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="202.5" y="587.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#7c3aed" text-anchor="middle" opacity="1.0">压紧</text>
+<path d="M 295.0 611 L 295.0 650" fill="none" stroke="#ea580c" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="276.0" y="620.5" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="295.0" y="634.5" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#ea580c" text-anchor="middle" opacity="1.0">密封</text>
+<path d="M 195 678.0 L 205 683.0" fill="none" stroke="#7c3aed" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="181.0" y="670.5" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="200.0" y="684.5" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#7c3aed" text-anchor="middle" opacity="1.0">定位</text>
+<path d="M 295.0 716 L 230.0 780" fill="none" stroke="#2563eb" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="232.5" y="738.0" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="262.5" y="752.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#2563eb" text-anchor="middle" opacity="1.0">一体特征</text>
+<g><title>{&quot;role&quot;: &quot;power_input&quot;}</title>
+<rect x="490" y="275" width="170" height="58" rx="10" fill="#ccfbf1" stroke="#115e59" stroke-width="1.3"/>
+<text x="575.0" y="298" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#115e59" text-anchor="middle" opacity="1.0">输入联轴器接口</text>
+<text x="575.0" y="316" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">power_input</text>
+</g>
+<g><title>{&quot;module&quot;: 2.5, &quot;teeth&quot;: 20, &quot;face_width&quot;: 28.0, &quot;bore&quot;: 24.2}</title>
+<rect x="735" y="285" width="175" height="62" rx="10" fill="#ffe4e6" stroke="#9f1239" stroke-width="1.3"/>
+<text x="822.5" y="308" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#9f1239" text-anchor="middle" opacity="1.0">小齿轮</text>
+<text x="822.5" y="326" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">m=2.5 · z=20 · b=28</text>
+</g>
+<g><title>{&quot;standard&quot;: &quot;DIN 6885 / GB-T 1096&quot;, &quot;size&quot;: &quot;8x7&quot;}</title>
+<rect x="745" y="385" width="155" height="56" rx="10" fill="#fef3c7" stroke="#92400e" stroke-width="1.3"/>
+<text x="822.5" y="408" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#92400e" text-anchor="middle" opacity="1.0">小齿轮平键</text>
+<text x="822.5" y="426" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">8×7 平键</text>
+</g>
+<g><title>{&quot;diameter&quot;: 24.0, &quot;length&quot;: 220.0}</title>
+<rect x="650" y="480" width="280" height="66" rx="10" fill="#f3e8ff" stroke="#6b21a8" stroke-width="1.3"/>
+<text x="790.0" y="503" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#6b21a8" text-anchor="middle" opacity="1.0">输入轴</text>
+<text x="790.0" y="521" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">d=24 · L=220 mm</text>
+</g>
+<g><title>{&quot;bore&quot;: 24.2, &quot;outer_diameter&quot;: 52.0, &quot;width&quot;: 15.0}</title>
+<rect x="495" y="590" width="180" height="60" rx="10" fill="#dcfce7" stroke="#166534" stroke-width="1.3"/>
+<text x="585.0" y="613" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#166534" text-anchor="middle" opacity="1.0">输入轴左轴承</text>
+<text x="585.0" y="631" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">24.2×52×15</text>
+</g>
+<g><title>{}</title>
+<rect x="705" y="590" width="150" height="56" rx="10" fill="#f7fee7" stroke="#3f6212" stroke-width="1.3"/>
+<text x="780.0" y="613" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#3f6212" text-anchor="middle" opacity="1.0">输入轴隔套</text>
+<text x="780.0" y="631" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">input_spacer</text>
+</g>
+<g><title>{&quot;bore&quot;: 24.2, &quot;outer_diameter&quot;: 52.0, &quot;width&quot;: 15.0}</title>
+<rect x="875" y="590" width="180" height="60" rx="10" fill="#dcfce7" stroke="#166534" stroke-width="1.3"/>
+<text x="965.0" y="613" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#166534" text-anchor="middle" opacity="1.0">输入轴右轴承</text>
+<text x="965.0" y="631" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">24.2×52×15</text>
+</g>
+<g><title>{}</title>
+<rect x="490" y="710" width="180" height="58" rx="10" fill="#e0f2fe" stroke="#075985" stroke-width="1.3"/>
+<text x="580.0" y="733" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#075985" text-anchor="middle" opacity="1.0">输入侧通孔端盖</text>
+<text x="580.0" y="751" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">input_through_cover</text>
+</g>
+<g><title>{&quot;quantity&quot;: 2}</title>
+<rect x="695" y="710" width="170" height="58" rx="10" fill="#ffedd5" stroke="#9a3412" stroke-width="1.3"/>
+<text x="780.0" y="733" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#9a3412" text-anchor="middle" opacity="1.0">输入端盖密封垫组</text>
+<text x="780.0" y="751" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">2 件</text>
+</g>
+<g><title>{}</title>
+<rect x="885" y="710" width="170" height="58" rx="10" fill="#e0f2fe" stroke="#075985" stroke-width="1.3"/>
+<text x="970.0" y="733" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#075985" text-anchor="middle" opacity="1.0">输入侧盲端盖</text>
+<text x="970.0" y="751" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">input_blind_cover</text>
+</g>
+<g><title>{&quot;nominal_shaft_diameter&quot;: 24.0}</title>
+<rect x="490" y="820" width="180" height="58" rx="10" fill="#ffedd5" stroke="#9a3412" stroke-width="1.3"/>
+<text x="580.0" y="843" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#9a3412" text-anchor="middle" opacity="1.0">输入轴油封</text>
+<text x="580.0" y="861" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">轴径 24 mm</text>
+</g>
+<g><title>{&quot;specification&quot;: &quot;M6&quot;, &quot;quantity&quot;: 8}</title>
+<rect x="695" y="820" width="170" height="58" rx="10" fill="#ede9fe" stroke="#5b21b6" stroke-width="1.3"/>
+<text x="780.0" y="843" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#5b21b6" text-anchor="middle" opacity="1.0">输入端盖螺钉组</text>
+<text x="780.0" y="861" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">M6 × 8</text>
+</g>
+<g><title>{&quot;option&quot;: &quot;locknut or circlip&quot;}</title>
+<rect x="885" y="820" width="170" height="58" rx="10" fill="#f7fee7" stroke="#3f6212" stroke-width="1.3"/>
+<text x="970.0" y="843" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#3f6212" text-anchor="middle" opacity="1.0">输入轴锁紧件</text>
+<text x="970.0" y="861" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">锁紧螺母/挡圈</text>
+</g>
+<path d="M 660 304.0 L 610 304 L 650 513.0" fill="none" stroke="#2563eb" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="574.0" y="294" width="72" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="610" y="308" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#2563eb" text-anchor="middle" opacity="1.0">连接输入端</text>
+<path d="M 822.5 347 L 822.5 385" fill="none" stroke="#2563eb" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="798.5" y="356.0" width="48" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="822.5" y="370.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#2563eb" text-anchor="middle" opacity="1.0">键连接</text>
+<path d="M 822.5 441 L 790.0 480" fill="none" stroke="#2563eb" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="776.25" y="450.5" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="806.25" y="464.5" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#2563eb" text-anchor="middle" opacity="1.0">周向固定</text>
+<path d="M 585.0 590 L 650 513.0" fill="none" stroke="#16a34a" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="598.5" y="541.5" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="617.5" y="555.5" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#16a34a" text-anchor="middle" opacity="1.0">支承</text>
+<path d="M 965.0 590 L 930 513.0" fill="none" stroke="#16a34a" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="928.5" y="541.5" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="947.5" y="555.5" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#16a34a" text-anchor="middle" opacity="1.0">支承</text>
+<path d="M 780.0 590 L 790.0 546" fill="none" stroke="#16a34a" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="755.0" y="558.0" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="785.0" y="572.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#16a34a" text-anchor="middle" opacity="1.0">轴向定位</text>
+<path d="M 580.0 710 L 585.0 650" fill="none" stroke="#7c3aed" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="563.5" y="670.0" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="582.5" y="684.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#7c3aed" text-anchor="middle" opacity="1.0">压盖</text>
+<path d="M 970.0 710 L 965.0 650" fill="none" stroke="#7c3aed" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="948.5" y="670.0" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="967.5" y="684.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#7c3aed" text-anchor="middle" opacity="1.0">压盖</text>
+<path d="M 580.0 820 L 580.0 768" fill="none" stroke="#ea580c" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="561.0" y="784.0" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="580.0" y="798.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#ea580c" text-anchor="middle" opacity="1.0">压装</text>
+<path d="M 670 849.0 L 610 849 L 650 513.0" fill="none" stroke="#ea580c" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="580.0" y="839" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="610" y="853" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#ea580c" text-anchor="middle" opacity="1.0">唇口密封</text>
+<path d="M 780.0 710 L 775 680" fill="none" stroke="#ea580c" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="747.5" y="685.0" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="777.5" y="699.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#ea580c" text-anchor="middle" opacity="1.0">端盖密封</text>
+<path d="M 780.0 820 L 775 780" fill="none" stroke="#7c3aed" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="747.5" y="790.0" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="777.5" y="804.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#7c3aed" text-anchor="middle" opacity="1.0">紧固端盖</text>
+<path d="M 970.0 820 L 965.0 650" fill="none" stroke="#16a34a" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="937.5" y="725.0" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="967.5" y="739.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#16a34a" text-anchor="middle" opacity="1.0">轴向锁紧</text>
+<g><title>{&quot;role&quot;: &quot;power_output&quot;}</title>
+<rect x="1570" y="275" width="170" height="58" rx="10" fill="#ccfbf1" stroke="#115e59" stroke-width="1.3"/>
+<text x="1655.0" y="298" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#115e59" text-anchor="middle" opacity="1.0">输出联轴器接口</text>
+<text x="1655.0" y="316" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">power_output</text>
+</g>
+<g><title>{&quot;module&quot;: 2.5, &quot;teeth&quot;: 60, &quot;face_width&quot;: 28.0, &quot;bore&quot;: 36.2}</title>
+<rect x="1345" y="285" width="185" height="62" rx="10" fill="#ffe4e6" stroke="#9f1239" stroke-width="1.3"/>
+<text x="1437.5" y="308" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#9f1239" text-anchor="middle" opacity="1.0">大齿轮</text>
+<text x="1437.5" y="326" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">m=2.5 · z=60 · b=28</text>
+</g>
+<g><title>{&quot;standard&quot;: &quot;DIN 6885 / GB-T 1096&quot;, &quot;size&quot;: &quot;10x8&quot;}</title>
+<rect x="1360" y="385" width="155" height="56" rx="10" fill="#fef3c7" stroke="#92400e" stroke-width="1.3"/>
+<text x="1437.5" y="408" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#92400e" text-anchor="middle" opacity="1.0">大齿轮平键</text>
+<text x="1437.5" y="426" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">10×8 平键</text>
+</g>
+<g><title>{&quot;diameter&quot;: 36.0, &quot;length&quot;: 220.0}</title>
+<rect x="1295" y="480" width="290" height="66" rx="10" fill="#f3e8ff" stroke="#6b21a8" stroke-width="1.3"/>
+<text x="1440.0" y="503" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#6b21a8" text-anchor="middle" opacity="1.0">输出轴</text>
+<text x="1440.0" y="521" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">d=36 · L=220 mm</text>
+</g>
+<g><title>{&quot;bore&quot;: 36.2, &quot;outer_diameter&quot;: 72.0, &quot;width&quot;: 17.0}</title>
+<rect x="1145" y="590" width="185" height="60" rx="10" fill="#dcfce7" stroke="#166534" stroke-width="1.3"/>
+<text x="1237.5" y="613" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#166534" text-anchor="middle" opacity="1.0">输出轴左轴承</text>
+<text x="1237.5" y="631" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">36.2×72×17</text>
+</g>
+<g><title>{}</title>
+<rect x="1355" y="590" width="150" height="56" rx="10" fill="#f7fee7" stroke="#3f6212" stroke-width="1.3"/>
+<text x="1430.0" y="613" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#3f6212" text-anchor="middle" opacity="1.0">输出轴隔套</text>
+<text x="1430.0" y="631" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">output_spacer</text>
+</g>
+<g><title>{&quot;bore&quot;: 36.2, &quot;outer_diameter&quot;: 72.0, &quot;width&quot;: 17.0}</title>
+<rect x="1550" y="590" width="185" height="60" rx="10" fill="#dcfce7" stroke="#166534" stroke-width="1.3"/>
+<text x="1642.5" y="613" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#166534" text-anchor="middle" opacity="1.0">输出轴右轴承</text>
+<text x="1642.5" y="631" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">36.2×72×17</text>
+</g>
+<g><title>{}</title>
+<rect x="1145" y="710" width="180" height="58" rx="10" fill="#e0f2fe" stroke="#075985" stroke-width="1.3"/>
+<text x="1235.0" y="733" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#075985" text-anchor="middle" opacity="1.0">输出侧盲端盖</text>
+<text x="1235.0" y="751" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">output_blind_cover</text>
+</g>
+<g><title>{&quot;quantity&quot;: 2}</title>
+<rect x="1350" y="710" width="170" height="58" rx="10" fill="#ffedd5" stroke="#9a3412" stroke-width="1.3"/>
+<text x="1435.0" y="733" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#9a3412" text-anchor="middle" opacity="1.0">输出端盖密封垫组</text>
+<text x="1435.0" y="751" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">2 件</text>
+</g>
+<g><title>{}</title>
+<rect x="1555" y="710" width="180" height="58" rx="10" fill="#e0f2fe" stroke="#075985" stroke-width="1.3"/>
+<text x="1645.0" y="733" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#075985" text-anchor="middle" opacity="1.0">输出侧通孔端盖</text>
+<text x="1645.0" y="751" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">output_through_cover</text>
+</g>
+<g><title>{&quot;option&quot;: &quot;locknut or circlip&quot;}</title>
+<rect x="1145" y="820" width="180" height="58" rx="10" fill="#f7fee7" stroke="#3f6212" stroke-width="1.3"/>
+<text x="1235.0" y="843" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#3f6212" text-anchor="middle" opacity="1.0">输出轴锁紧件</text>
+<text x="1235.0" y="861" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">锁紧螺母/挡圈</text>
+</g>
+<g><title>{&quot;specification&quot;: &quot;M6&quot;, &quot;quantity&quot;: 8}</title>
+<rect x="1350" y="820" width="170" height="58" rx="10" fill="#ede9fe" stroke="#5b21b6" stroke-width="1.3"/>
+<text x="1435.0" y="843" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#5b21b6" text-anchor="middle" opacity="1.0">输出端盖螺钉组</text>
+<text x="1435.0" y="861" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">M6 × 8</text>
+</g>
+<g><title>{&quot;nominal_shaft_diameter&quot;: 36.0}</title>
+<rect x="1555" y="820" width="180" height="58" rx="10" fill="#ffedd5" stroke="#9a3412" stroke-width="1.3"/>
+<text x="1645.0" y="843" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#9a3412" text-anchor="middle" opacity="1.0">输出轴油封</text>
+<text x="1645.0" y="861" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">轴径 36 mm</text>
+</g>
+<path d="M 1570 304.0 L 1620 304 L 1585 513.0" fill="none" stroke="#2563eb" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1584.0" y="294" width="72" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1620" y="308" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#2563eb" text-anchor="middle" opacity="1.0">连接输出端</text>
+<path d="M 1437.5 347 L 1437.5 385" fill="none" stroke="#2563eb" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1413.5" y="356.0" width="48" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1437.5" y="370.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#2563eb" text-anchor="middle" opacity="1.0">键连接</text>
+<path d="M 1437.5 441 L 1440.0 480" fill="none" stroke="#2563eb" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1408.75" y="450.5" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1438.75" y="464.5" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#2563eb" text-anchor="middle" opacity="1.0">周向固定</text>
+<path d="M 1237.5 590 L 1295 513.0" fill="none" stroke="#16a34a" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1247.25" y="541.5" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1266.25" y="555.5" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#16a34a" text-anchor="middle" opacity="1.0">支承</text>
+<path d="M 1642.5 590 L 1585 513.0" fill="none" stroke="#16a34a" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1594.75" y="541.5" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1613.75" y="555.5" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#16a34a" text-anchor="middle" opacity="1.0">支承</text>
+<path d="M 1430.0 590 L 1440.0 546" fill="none" stroke="#16a34a" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1405.0" y="558.0" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1435.0" y="572.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#16a34a" text-anchor="middle" opacity="1.0">轴向定位</text>
+<path d="M 1235.0 710 L 1237.5 650" fill="none" stroke="#7c3aed" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1217.25" y="670.0" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1236.25" y="684.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#7c3aed" text-anchor="middle" opacity="1.0">压盖</text>
+<path d="M 1645.0 710 L 1642.5 650" fill="none" stroke="#7c3aed" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1624.75" y="670.0" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1643.75" y="684.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#7c3aed" text-anchor="middle" opacity="1.0">压盖</text>
+<path d="M 1645.0 820 L 1645.0 768" fill="none" stroke="#ea580c" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1626.0" y="784.0" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1645.0" y="798.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#ea580c" text-anchor="middle" opacity="1.0">压装</text>
+<path d="M 1555 849.0 L 1660 849 L 1585 513.0" fill="none" stroke="#ea580c" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1630.0" y="839" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1660" y="853" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#ea580c" text-anchor="middle" opacity="1.0">唇口密封</text>
+<path d="M 1435.0 710 L 1435 680" fill="none" stroke="#ea580c" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1405.0" y="685.0" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1435.0" y="699.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#ea580c" text-anchor="middle" opacity="1.0">端盖密封</text>
+<path d="M 1435.0 820 L 1435 780" fill="none" stroke="#7c3aed" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1405.0" y="790.0" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1435.0" y="804.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#7c3aed" text-anchor="middle" opacity="1.0">紧固端盖</text>
+<path d="M 1235.0 820 L 1237.5 650" fill="none" stroke="#16a34a" stroke-width="1.7" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1206.25" y="725.0" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1236.25" y="739.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#16a34a" text-anchor="middle" opacity="1.0">轴向锁紧</text>
+<path d="M 910 316.0 L 1345 316.0" fill="none" stroke="#dc2626" stroke-width="2.4" opacity="1.0"/>
+<rect x="995.5" y="306.0" width="264" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1127.5" y="320.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#dc2626" text-anchor="middle" opacity="1.0">啮合 · backlash 0.15 mm</text>
+<path d="M 930 513.0 L 1295 513.0" fill="none" stroke="#dc2626" stroke-width="2.0" stroke-dasharray="7 5" opacity="1.0"/>
+<rect x="1016.5" y="503.0" width="192" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1112.5" y="517.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#dc2626" text-anchor="middle" opacity="1.0">轴线平行 · a=100 mm</text>
+<path d="M 385 683.0 L 445 683 L 465 620" fill="none" stroke="#16a34a" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="385.0" y="673" width="120" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="445" y="687" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#16a34a" text-anchor="middle" opacity="1.0">输入轴承座/端盖孔</text>
+<path d="M 465 620 L 495 620.0" fill="none" stroke="#16a34a" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="461.0" y="610.0" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="480.0" y="624.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#16a34a" text-anchor="middle" opacity="1.0">装入</text>
+<path d="M 465 660 L 490 739.0" fill="none" stroke="#7c3aed" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="447.5" y="689.5" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="477.5" y="703.5" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#7c3aed" text-anchor="middle" opacity="1.0">螺钉连接</text>
+<path d="M 385 683.0 L 760 950 L 1120 620" fill="none" stroke="#16a34a" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="0.75"/>
+<rect x="700.0" y="940" width="120" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="760" y="954" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#16a34a" text-anchor="middle" opacity="1.0">输出轴承座/端盖孔</text>
+<path d="M 1120 620 L 1145 620.0" fill="none" stroke="#16a34a" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1113.5" y="610.0" width="38" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1132.5" y="624.0" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#16a34a" text-anchor="middle" opacity="1.0">装入</text>
+<path d="M 1120 660 L 1145 739.0" fill="none" stroke="#7c3aed" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="1.0"/>
+<rect x="1102.5" y="689.5" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1132.5" y="703.5" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#7c3aed" text-anchor="middle" opacity="1.0">螺钉连接</text>
+<g><title>{}</title>
+<rect x="65" y="1150" width="175" height="60" rx="10" fill="#cffafe" stroke="#155e75" stroke-width="1.3"/>
+<text x="152.5" y="1173" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#155e75" text-anchor="middle" opacity="1.0">油池区域</text>
+<text x="152.5" y="1191" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">oil bath region</text>
+</g>
+<g><title>{}</title>
+<rect x="260" y="1150" width="130" height="60" rx="10" fill="#ecfccb" stroke="#3f6212" stroke-width="1.3"/>
+<text x="325.0" y="1173" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#3f6212" text-anchor="middle" opacity="1.0">通气塞</text>
+<text x="325.0" y="1191" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">breather_plug</text>
+</g>
+<g><title>{}</title>
+<rect x="410" y="1150" width="130" height="60" rx="10" fill="#ecfccb" stroke="#3f6212" stroke-width="1.3"/>
+<text x="475.0" y="1173" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#3f6212" text-anchor="middle" opacity="1.0">注油塞</text>
+<text x="475.0" y="1191" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">oil_fill_plug</text>
+</g>
+<g><title>{}</title>
+<rect x="560" y="1150" width="145" height="60" rx="10" fill="#ecfccb" stroke="#3f6212" stroke-width="1.3"/>
+<text x="632.5" y="1173" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#3f6212" text-anchor="middle" opacity="1.0">油位指示器</text>
+<text x="632.5" y="1191" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">oil_level_indicator</text>
+</g>
+<g><title>{&quot;option&quot;: &quot;magnetic&quot;}</title>
+<rect x="720" y="1150" width="80" height="60" rx="10" fill="#ecfccb" stroke="#3f6212" stroke-width="1.3"/>
+<text x="760.0" y="1173" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#3f6212" text-anchor="middle" opacity="1.0">放油塞</text>
+<text x="760.0" y="1191" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">磁性可选</text>
+</g>
+<path d="M 152.5 1150 L 520 1020 L 822.5 347" fill="none" stroke="#0891b2" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="0.7"/>
+<rect x="490.0" y="1010" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="520" y="1024" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#0891b2" text-anchor="middle" opacity="1.0">飞溅润滑</text>
+<path d="M 152.5 1150 L 1180 1020 L 1437.5 347" fill="none" stroke="#0891b2" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="0.7"/>
+<rect x="1150.0" y="1010" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1180" y="1024" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#0891b2" text-anchor="middle" opacity="1.0">飞溅润滑</text>
+<path d="M 325.0 1150 L 330 1020 L 232.5 512" fill="none" stroke="#0891b2" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="0.75"/>
+<rect x="294.0" y="1010" width="72" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="330" y="1024" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#0891b2" text-anchor="middle" opacity="1.0">安装于箱盖</text>
+<path d="M 475.0 1150 L 430 1020 L 232.5 512" fill="none" stroke="#0891b2" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="0.75"/>
+<rect x="394.0" y="1010" width="72" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="430" y="1024" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#0891b2" text-anchor="middle" opacity="1.0">安装于箱盖</text>
+<path d="M 632.5 1150 L 570 1020 L 295.0 716" fill="none" stroke="#0891b2" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="0.75"/>
+<rect x="534.0" y="1010" width="72" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="570" y="1024" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#0891b2" text-anchor="middle" opacity="1.0">安装于侧壁</text>
+<path d="M 760.0 1150 L 700 1020 L 295.0 716" fill="none" stroke="#0891b2" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="0.75"/>
+<rect x="664.0" y="1010" width="72" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="700" y="1024" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#0891b2" text-anchor="middle" opacity="1.0">安装于底部</text>
+<g><title>{&quot;expression&quot;: &quot;a=m(z1+z2)/2&quot;, &quot;value&quot;: 100.0, &quot;unit&quot;: &quot;mm&quot;, &quot;hardness&quot;: &quot;hard&quot;}</title>
+<rect x="875" y="1150" width="160" height="62" rx="10" fill="#fee2e2" stroke="#991b1b" stroke-width="1.3"/>
+<text x="955.0" y="1173" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#991b1b" text-anchor="middle" opacity="1.0">中心距约束</text>
+<text x="955.0" y="1191" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">a=m(z₁+z₂)/2=100 mm</text>
+</g>
+<g><title>{&quot;requirements&quot;: [&quot;same_module&quot;, &quot;same_pressure_angle&quot;, &quot;parallel_axes&quot;, &quot;backlash=0.15 mm&quot;], &quot;hardness&quot;: &quot;hard&quot;}</title>
+<rect x="1055" y="1150" width="160" height="62" rx="10" fill="#fee2e2" stroke="#991b1b" stroke-width="1.3"/>
+<text x="1135.0" y="1173" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#991b1b" text-anchor="middle" opacity="1.0">齿轮啮合兼容</text>
+<text x="1135.0" y="1191" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">同模数/压力角/侧隙</text>
+</g>
+<g><title>{&quot;hardness&quot;: &quot;hard&quot;}</title>
+<rect x="1235" y="1150" width="160" height="62" rx="10" fill="#fee2e2" stroke="#991b1b" stroke-width="1.3"/>
+<text x="1315.0" y="1173" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#991b1b" text-anchor="middle" opacity="1.0">轴向定位约束</text>
+<text x="1315.0" y="1191" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">齿轮-轴承-隔套-锁紧件</text>
+</g>
+<g><title>{&quot;minimum_gear_clearance&quot;: 14.0, &quot;unit&quot;: &quot;mm&quot;, &quot;hardness&quot;: &quot;hard&quot;}</title>
+<rect x="1415" y="1150" width="160" height="62" rx="10" fill="#fee2e2" stroke="#991b1b" stroke-width="1.3"/>
+<text x="1495.0" y="1173" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#991b1b" text-anchor="middle" opacity="1.0">箱体间隙约束</text>
+<text x="1495.0" y="1191" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">gear clearance ≥14 mm</text>
+</g>
+<g><title>{&quot;requirements&quot;: [&quot;coplanar&quot;, &quot;bolt_holes_aligned&quot;, &quot;dowels_locate&quot;, &quot;gasket_compressed&quot;], &quot;hardness&quot;: &quot;hard&quot;}</title>
+<rect x="1595" y="1150" width="145" height="62" rx="10" fill="#fee2e2" stroke="#991b1b" stroke-width="1.3"/>
+<text x="1667.5" y="1173" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="650" fill="#991b1b" text-anchor="middle" opacity="1.0">剖分面连接约束</text>
+<text x="1667.5" y="1191" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="9" font-weight="400" fill="#566174" text-anchor="middle" opacity="1.0">共面/对孔/压紧</text>
+</g>
+<path d="M 955.0 1150 L 955 1080 L 1090 1005" fill="none" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="0.7"/>
+<rect x="901.0" y="1070" width="108" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="955" y="1084" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#b91c1c" text-anchor="middle" opacity="1.0">约束齿轮副与轴线</text>
+<path d="M 1135.0 1150 L 1135 1080 L 1090 1005" fill="none" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="0.7"/>
+<rect x="1105.0" y="1070" width="60" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1135" y="1084" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#b91c1c" text-anchor="middle" opacity="1.0">啮合兼容</text>
+<path d="M 1315.0 1150 L 1315 1080 L 1090 1005" fill="none" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="0.7"/>
+<rect x="1273.0" y="1070" width="84" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1315" y="1084" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#b91c1c" text-anchor="middle" opacity="1.0">约束两轴总成</text>
+<path d="M 1495.0 1150 L 1495 1080 L 1090 1005" fill="none" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="0.7"/>
+<rect x="1435.0" y="1070" width="120" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1495" y="1084" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#b91c1c" text-anchor="middle" opacity="1.0">约束齿轮包络/箱体</text>
+<path d="M 1667.5 1150 L 1665 1020 L 430 1005" fill="none" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" opacity="0.65"/>
+<rect x="1611.0" y="1010" width="108" height="20" rx="5" fill="white" opacity="0.92"/>
+<text x="1665" y="1024" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="500" fill="#b91c1c" text-anchor="middle" opacity="1.0">约束箱盖/下箱体</text>
+<text x="70" y="1332" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start" opacity="1.0">关系图例</text>
+<line x1="160" y1="1328" x2="202" y2="1328" stroke="#2563eb" stroke-width="2"/>
+<text x="209" y="1332" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="500" fill="#475569" text-anchor="start" opacity="1.0">安装/连接</text>
+<line x1="315" y1="1328" x2="357" y2="1328" stroke="#16a34a" stroke-width="2"/>
+<text x="364" y="1332" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="500" fill="#475569" text-anchor="start" opacity="1.0">支承/轴向定位</text>
+<line x1="470" y1="1328" x2="512" y2="1328" stroke="#dc2626" stroke-width="2"/>
+<text x="519" y="1332" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="500" fill="#475569" text-anchor="start" opacity="1.0">啮合/轴线</text>
+<line x1="625" y1="1328" x2="667" y2="1328" stroke="#ea580c" stroke-width="2"/>
+<text x="674" y="1332" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="500" fill="#475569" text-anchor="start" opacity="1.0">密封</text>
+<line x1="780" y1="1328" x2="822" y2="1328" stroke="#7c3aed" stroke-width="2"/>
+<text x="829" y="1332" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="500" fill="#475569" text-anchor="start" opacity="1.0">紧固/定位</text>
+<line x1="935" y1="1328" x2="977" y2="1328" stroke="#0891b2" stroke-width="2"/>
+<text x="984" y="1332" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="500" fill="#475569" text-anchor="start" opacity="1.0">润滑/维护</text>
+<line x1="1090" y1="1328" x2="1132" y2="1328" stroke="#b91c1c" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1139" y="1332" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="11" font-weight="500" fill="#475569" text-anchor="start" opacity="1.0">显式约束</text>
+<text x="70" y="1388" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start" opacity="1.0">说明：重复螺栓/密封垫采用 pattern 节点；轴肩、键槽、轴承座孔等几何细节将在 CAD feature graph 中展开。</text>
+<text x="70" y="1412" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start" opacity="1.0">完整 121 条关系、参数与来源保存在同名 JSON；本图是用于人工审查的投影视图。</text>
+</svg>
